@@ -6,7 +6,7 @@
 // to the corresponding seven-segment displays. It calls the Mux3w_5to1 module 5 times with 5 
 // different combinations of switches, moving the switches to the right after each module call.
 // It then stores the 3-bit results in M0 - M4, and then uses these to tell the HexHELO module
-// what to display on each seven-segment display.
+// what to display on each seven-segment display. 
 //
 // Required switch settings:
 // On: SW - 9, 7, 4, 1, 0
