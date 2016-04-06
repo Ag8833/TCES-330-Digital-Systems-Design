@@ -1,37 +1,37 @@
 |Part5
-SW[0] => SW[0].IN5
-SW[1] => SW[1].IN5
-SW[2] => SW[2].IN5
-SW[3] => SW[3].IN5
-SW[4] => SW[4].IN5
-SW[5] => SW[5].IN5
-SW[6] => SW[6].IN5
-SW[7] => SW[7].IN5
-SW[8] => SW[8].IN5
-SW[9] => SW[9].IN5
-SW[10] => SW[10].IN5
-SW[11] => SW[11].IN5
-SW[12] => SW[12].IN5
-SW[13] => SW[13].IN5
-SW[14] => SW[14].IN5
+SW[0] => O[0].IN5
+SW[1] => O[1].IN5
+SW[2] => O[2].IN5
+SW[3] => L1[0].IN5
+SW[4] => L1[1].IN5
+SW[5] => L1[2].IN5
+SW[6] => L2[0].IN5
+SW[7] => L2[1].IN5
+SW[8] => L2[2].IN5
+SW[9] => E[0].IN5
+SW[10] => E[1].IN5
+SW[11] => E[2].IN5
+SW[12] => H[0].IN5
+SW[13] => H[1].IN5
+SW[14] => H[2].IN5
 SW[15] => SW[15].IN5
 SW[16] => SW[16].IN5
 SW[17] => SW[17].IN5
-LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[7] <= SW[7].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[8] <= SW[8].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[9] <= SW[9].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[10] <= SW[10].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[11] <= SW[11].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[12] <= SW[12].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[13] <= SW[13].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[14] <= SW[14].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] <= O[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= O[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= O[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= L1[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= L1[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= L1[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= L2[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= L2[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= L2[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= E[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[10] <= E[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[11] <= E[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[12] <= H[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[13] <= H[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[14] <= H[2].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[15] <= SW[15].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[16] <= SW[16].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[17] <= SW[17].DB_MAX_OUTPUT_PORT_TYPE
@@ -70,162 +70,6 @@ HEX4[3] <= HexHELO:H4.port1
 HEX4[2] <= HexHELO:H4.port1
 HEX4[1] <= HexHELO:H4.port1
 HEX4[0] <= HexHELO:H4.port1
-
-
-|Part5|Mux3w_5to1:Mu0
-U[0] => U[0].IN1
-U[1] => U[1].IN1
-U[2] => U[2].IN1
-V[0] => V[0].IN1
-V[1] => V[1].IN1
-V[2] => V[2].IN1
-W[0] => W[0].IN1
-W[1] => W[1].IN1
-W[2] => W[2].IN1
-X[0] => X[0].IN1
-X[1] => X[1].IN1
-X[2] => X[2].IN1
-Y[0] => Y[0].IN1
-Y[1] => Y[1].IN1
-Y[2] => Y[2].IN1
-S[0] => S[0].IN3
-S[1] => S[1].IN3
-S[2] => S[2].IN3
-M[0] <= Mux5_1:Mux0.port6
-M[1] <= Mux5_1:Mux1.port6
-M[2] <= Mux5_1:Mux2.port6
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0
-U => U.IN1
-V => V.IN1
-W => W.IN1
-X => X.IN1
-Y => Y.IN1
-S[0] => S[0].IN2
-S[1] => S[1].IN1
-S[2] => S[2].IN1
-M <= Mux2_1:Mux4.port3
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0|Mux2_1:Mux1
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0|Mux2_1:Mux2
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0|Mux2_1:Mux3
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0|Mux2_1:Mux4
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1
-U => U.IN1
-V => V.IN1
-W => W.IN1
-X => X.IN1
-Y => Y.IN1
-S[0] => S[0].IN2
-S[1] => S[1].IN1
-S[2] => S[2].IN1
-M <= Mux2_1:Mux4.port3
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1|Mux2_1:Mux1
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1|Mux2_1:Mux2
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1|Mux2_1:Mux3
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1|Mux2_1:Mux4
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2
-U => U.IN1
-V => V.IN1
-W => W.IN1
-X => X.IN1
-Y => Y.IN1
-S[0] => S[0].IN2
-S[1] => S[1].IN1
-S[2] => S[2].IN1
-M <= Mux2_1:Mux4.port3
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2|Mux2_1:Mux1
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2|Mux2_1:Mux2
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2|Mux2_1:Mux3
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2|Mux2_1:Mux4
-X => F.IN0
-Y => F.IN0
-S => F.IN1
-S => F.IN1
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part5|Mux3w_5to1:Mu1
@@ -845,6 +689,162 @@ F <= F.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part5|Mux3w_5to1:Mu4|Mux5_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+S[0] => S[0].IN3
+S[1] => S[1].IN3
+S[2] => S[2].IN3
+M[0] <= Mux5_1:Mux0.port6
+M[1] <= Mux5_1:Mux1.port6
+M[2] <= Mux5_1:Mux2.port6
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+S[0] => S[0].IN2
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+M <= Mux2_1:Mux4.port3
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+S[0] => S[0].IN2
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+M <= Mux2_1:Mux4.port3
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+S[0] => S[0].IN2
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+M <= Mux2_1:Mux4.port3
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_5to1:Mu0|Mux5_1:Mux2|Mux2_1:Mux4
 X => F.IN0
 Y => F.IN0
 S => F.IN1

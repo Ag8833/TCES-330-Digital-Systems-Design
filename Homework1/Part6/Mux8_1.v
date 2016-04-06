@@ -1,5 +1,6 @@
 // TCES 330, Spring 2016
 // Andrew Gates
+// Lab 1, Part 6
 //
 // Module that takes the 5 inputs which are each 1-bit and then
 // it calls the Mux2_1 module 4 different times to represent the 
@@ -8,10 +9,10 @@
 // with the final output being assigned to M.
 
 module Mux8_1(R, S, T, U, V, W, X, Y, SELECT, M); 
-	input R, S, T, U, V, W, X, Y;			// Inputs 
-	input [2:0] SELECT;								// Select line
-	output M;									// Output
-	wire F1, F2, F3, F4, F5, F6;			// The wires to connect MUXs
+	input R, S, T, U, V, W, X, Y;       // Inputs 
+	input [2:0] SELECT;                 // Select line
+	output M;                           // Output
+	wire F1, F2, F3, F4, F5, F6;        // The wires to connect MUXs
 	
 	// 7 instances of the 1-bit, 2 to 1 MUX:
 	Mux2_1 Mux0(R, S, SELECT[0], F1);

@@ -1,14 +1,15 @@
 // TCES 330, Spring 2016
 // Andrew Gates
+// Lab 1, Part 5
 //
 // Module that takes the 5 inputs which are all 3-bit vectors and
 // it calls the Mux5_1 module 3 times, once for each index of the
 // vector, but sending the entire select line vector each time. 
 
 module Mux3w_5to1(U, V, W, X, Y, S, M); 
-	input [2:0] U, V, W, X, Y;  	// Inputs 
-	input [2:0] S;          		// Select line
-	output [2:0] M;         		// Output
+	input [2:0] U, V, W, X, Y;    // Inputs 
+	input [2:0] S;                // Select line
+	output [2:0] M;               // Output
 	
 	// 3 instances of the 1-bit, 5 to 1 MUX:
 	Mux5_1 Mux0(U[0], V[0], W[0], X[0], Y[0], S, M[0]); 

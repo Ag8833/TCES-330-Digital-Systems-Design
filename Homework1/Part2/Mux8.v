@@ -1,5 +1,6 @@
 // TCES 330, Spring 2016
 // Andrew Gates
+// Lab 1, Part 2
 //
 // Module that chooses either X or Y for each bit of the vector
 // depending on what the value of S is, S = 0 will choose X and 
@@ -9,9 +10,9 @@
 // line is represented by SW[17], 
 
 module Mux8(S, X, Y, M); 
-	input S;		// Mux select line in
-	input [7:0] X, Y;	// Mux inputs 
-	output [7:0] M;	// Mux output
+	input S;             // Mux select line in
+	input [7:0] X, Y;    // Mux inputs 
+	output [7:0] M;      // Mux output
 	
 	// the mux: 
 	assign M[0] = (~S & X[0]) | (S & Y[0]); 

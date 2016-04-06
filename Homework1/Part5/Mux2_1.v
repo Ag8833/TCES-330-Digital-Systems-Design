@@ -1,5 +1,6 @@
 // TCES 330, Spring 2016
 // Andrew Gates
+// Lab 1, Part 5
 //
 // Module that takes the 2 inputs which are both 1-bit and then
 // assigns either X or Y to the output F depending on what the 
@@ -7,9 +8,9 @@
 // to F1, F2, F3 and M.
 
 module Mux2_1(X, Y, S, F); 
-	input X, Y;		// Input
-	input S;     	// Select line 
-	output F;    	// Output
+	input X, Y;    // Input
+	input S;       // Select line 
+	output F;      // Output
 	
 	assign F = (~S & X) | (S & Y);
 endmodule
