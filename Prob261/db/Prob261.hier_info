@@ -1,0 +1,16 @@
+|Prob261
+X1 => W3.IN0
+X1 => W4.IN0
+X1 => W2.IN0
+X1 => W1.IN0
+X2 => W2.IN1
+X2 => W4.IN1
+X2 => W3.IN1
+X2 => W1.IN1
+X3 => W1.IN1
+X3 => W4.IN1
+X3 => W3.IN1
+X3 => W2.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

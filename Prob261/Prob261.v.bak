@@ -1,0 +1,12 @@
+module Prob260(X1, X2, X3, F);
+	input X1, X2, X3;
+	output F;
+	wire W1, W2, W3, W4;
+	
+	assign W1 = (~X1 & ~X2 & X3);
+	assign W2 = (~X1 & X2 & ~X3);
+	assign W3 = (X1 & ~X2 & ~X3);
+	assign W4 = (X1 & X2 & X3);
+	
+	assign F = (W1 | W2 | W3 | W4);
+endmodule
