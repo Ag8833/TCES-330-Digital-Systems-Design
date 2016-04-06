@@ -16,7 +16,7 @@ module Part5(SW, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4);
 	output [17:0] LEDR;                                // Red LEDs 
 	output [0:6] HEX0, HEX1, HEX2, HEX3, HEX4;         // Seven-segment display
 	wire [2:0] M0, M1, M2, M3, M4;                     // Wires to store result of MUXs
-   wire [2:0] H, E, L1, L2, O;                        // Wires to simplify the module calls.
+        wire [2:0] H, E, L1, L2, O;                        // Wires to simplify the module calls.
 	
 	assign LEDR = SW;                                  // Displays the input switches 
 	assign O = SW[2:0];
