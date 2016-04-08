@@ -20,17 +20,17 @@ module Part5(SW, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4);
 	
 	assign LEDR = SW;                                  // Displays the input switches 
 	assign O = SW[2:0];
-	assign L1 = SW[5:3];
-	assign L2 = SW[8:6];
+	assign L2 = SW[5:3];
+	assign L1 = SW[8:6];
 	assign E = SW[11:9];
 	assign H = SW[14:12];
    
 	// The multiplexers:
-	Mux3w_5to1 Mu1(O, H, E, L2, L1, SW[17:15], M0);
-	Mux3w_5to1 Mu2(L1, O, H, E, L2, SW[17:15], M1);
-	Mux3w_5to1 Mu3(L2, L1, O, H, E, SW[17:15], M2);
-	Mux3w_5to1 Mu4(E, L2, L1, O, H, SW[17:15], M3);
-	Mux3w_5to1 Mu0(H, E, L2, L1, O, SW[17:15], M4);
+	Mux3w_5to1 Mu1(O, H, E, L1, L2, SW[17:15], M0);
+	Mux3w_5to1 Mu2(L2, O, H, E, L1, SW[17:15], M1);
+	Mux3w_5to1 Mu3(L1, L2, O, H, E, SW[17:15], M2);
+	Mux3w_5to1 Mu4(E, L1, L2, O, H, SW[17:15], M3);
+	Mux3w_5to1 Mu0(H, E, L1, L2, O, SW[17:15], M4);
 	
 	// The decoders:
 	HexHELO H0(M0, HEX0);
