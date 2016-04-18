@@ -1,0 +1,31 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 1, Part 6
+//
+// Module that does 7 assignments to the various segments of the seven-segment display.
+
+module HexDisplay(C, HEX);
+	input [3:0] C;       // Input
+	output reg [0:6] HEX;    // Output
+	
+   always @ (C)
+      case (C)
+         4'b0000: HEX = ~7'b1111110;
+         4'b0001: HEX = ~7'b0110000;
+         4'b0010: HEX = ~7'b1101101;
+         4'b0011: HEX = ~7'b1111001;
+         4'b0100: HEX = ~7'b0110011;
+         4'b0101: HEX = ~7'b1011011;
+         4'b0110: HEX = ~7'b1011111;
+         4'b0111: HEX = ~7'b1110000;
+         4'b1000: HEX = ~7'b1111111;
+         4'b1001: HEX = ~7'b1111011;
+         4'b1010: HEX = ~7'b1110111;
+         4'b1011: HEX = ~7'b0011111;
+         4'b1100: HEX = ~7'b1001110;
+         4'b1101: HEX = ~7'b0111101;
+         4'b1110: HEX = ~7'b1001111;
+         4'b1111: HEX = ~7'b1000111;
+         default: HEX = ~7'b0000000;
+      endcase
+endmodule

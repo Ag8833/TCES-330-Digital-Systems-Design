@@ -1,0 +1,13 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 1, Part 6
+//
+// Module that does 7 assignments to the various segments of the seven-segment display.
+
+module Adder(C, A, B, SUM);
+	input C;       // Input
+   input [3:0] A, B;
+	output reg [4:0] SUM;    // Output
+	
+   assign SUM = C + A + B;
+endmodule

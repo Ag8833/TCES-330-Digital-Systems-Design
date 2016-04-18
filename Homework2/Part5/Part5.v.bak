@@ -1,0 +1,42 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 1, Part 6
+//
+// Module that connects the SW switches to the LEDR lights, and connects the HEX0 - HEX4 outputs 
+// to the corresponding seven-segment displays. It calls the Mux3w_5to1 module 5 times with 5 
+// different combinations of switches, moving the switches to the right after each module call.
+// It then stores the 3-bit results in M0 - M4, and then uses these to tell the HexDisplay module
+// what to display on each seven-segment display.
+//
+// Required switch settings:
+// On: SW - 9, 7, 4, 1, 0
+
+module Part5(SW, LEDR, LEDG, HEX0, HEX1, HEX4, HEX6); 
+	input  [8:0] SW;                                                    // Toggle switches (inputs C[2:0]) 
+	output [8:0] LEDR;                                                  // Red LEDs 
+   output reg [8:0] LEDG;
+	output [0:6] HEX0, HEX1, HEX4, HEX6;                                // Seven-segment display
+   
+   wire [3:0] A, B;
+   wire C;
+   wire [4:0] SUM;
+   
+	assign LEDR = SW;                                                   // Displays the input switches
+   assign C = SW[8];
+   assign A = SW[7:4];
+   assign B = SW[3:0];
+   
+   always @ (A, B) begin
+      if(A > 9 | B > 9)
+         LEDG[8] = 1;
+      else
+         LEDG[8] = 0;
+   end
+   
+   Adder A0(C, A, B, SUM);
+   
+   HexDisplay H0(A, HEX6);
+   HexDisplay H1(B, HEX4);
+   HexDisplay H2(SUM%10, HEX0);
+   HexDisplay H3(SUM/10, HEX1);
+endmodule
