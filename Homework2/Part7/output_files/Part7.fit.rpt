@@ -1,5 +1,5 @@
 Fitter report for Part7
-Sun Apr 17 21:13:24 2016
+Tue Apr 19 16:34:10 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -64,7 +64,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Sun Apr 17 21:13:24 2016      ;
+; Fitter Status                      ; Successful - Tue Apr 19 16:34:10 2016      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; Part7                                      ;
 ; Top-level Entity Name              ; Part7                                      ;
@@ -2098,7 +2098,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2117,12 +2117,12 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part7/output_files/Part7.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1530 megabytes
-    Info: Processing ended: Sun Apr 17 21:13:24 2016
+    Info: Peak virtual memory: 1532 megabytes
+    Info: Processing ended: Tue Apr 19 16:34:10 2016
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:14
 

@@ -608,9 +608,7 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name VERILOG_FILE Part7.v
 set_global_assignment -name VERILOG_FILE HexDisplay.v
-set_global_assignment -name VERILOG_FILE 6BitBinary_2DigitDecimal.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE Binary6w_Decimal2w.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

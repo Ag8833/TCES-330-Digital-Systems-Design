@@ -17,26 +17,26 @@ SW[4] => LEDR[4].DATAIN
 SW[5] => Mod0.IN4
 SW[5] => Div0.IN4
 SW[5] => LEDR[5].DATAIN
-LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] << SW[1].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] << SW[2].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] << SW[3].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[4] << SW[4].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[5] << SW[5].DB_MAX_OUTPUT_PORT_TYPE
-HEX0[6] << HexDisplay:H0.port1
-HEX0[5] << HexDisplay:H0.port1
-HEX0[4] << HexDisplay:H0.port1
-HEX0[3] << HexDisplay:H0.port1
-HEX0[2] << HexDisplay:H0.port1
-HEX0[1] << HexDisplay:H0.port1
-HEX0[0] << HexDisplay:H0.port1
-HEX1[6] << HexDisplay:H1.port1
-HEX1[5] << HexDisplay:H1.port1
-HEX1[4] << HexDisplay:H1.port1
-HEX1[3] << HexDisplay:H1.port1
-HEX1[2] << HexDisplay:H1.port1
-HEX1[1] << HexDisplay:H1.port1
-HEX1[0] << HexDisplay:H1.port1
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HexDisplay:H0.port1
+HEX0[5] <= HexDisplay:H0.port1
+HEX0[4] <= HexDisplay:H0.port1
+HEX0[3] <= HexDisplay:H0.port1
+HEX0[2] <= HexDisplay:H0.port1
+HEX0[1] <= HexDisplay:H0.port1
+HEX0[0] <= HexDisplay:H0.port1
+HEX1[6] <= HexDisplay:H1.port1
+HEX1[5] <= HexDisplay:H1.port1
+HEX1[4] <= HexDisplay:H1.port1
+HEX1[3] <= HexDisplay:H1.port1
+HEX1[2] <= HexDisplay:H1.port1
+HEX1[1] <= HexDisplay:H1.port1
+HEX1[0] <= HexDisplay:H1.port1
 
 
 |Part7|HexDisplay:H0

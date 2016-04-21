@@ -2,10 +2,10 @@
 // Andrew Gates
 // Lab 2, Part 6
 //
-// Module that connects the SW switches to the LEDR lights, and connects the HEX0, HEX1, HEX4, and
-// HEX 6outputs to the corresponding seven-segment displays. The module checks to see if A or B are
-// greater than 9, and will turn on a green LED if they are. It will also do a series of Adder and 
-// MuxComparator module calls in order to calculate the 3-bit sum of the 2 4-bit numbers.
+// Module that connects the SW switches to the LEDR lights, and connects the HEX0, HEX1, HEX2, HEX4, 
+// HEX5, HEX6, and HEX7 outputs to the corresponding seven-segment displays. The module checks to see 
+// if A or B are greater than 9, and will turn on a green LED if they are. It will also call the AdderAlgorithm 
+// module that will calculate the sum of A1A0 + B1B0 and display them on the displays HEX2, HEX1, and HEX0.
 
 module Part6(SW, LEDR, LEDG, HEX0, HEX1, HEX2, HEX4, HEX5, HEX6, HEX7); 
 	input  [15:0] SW;                                           // Toggle switches
@@ -13,9 +13,8 @@ module Part6(SW, LEDR, LEDG, HEX0, HEX1, HEX2, HEX4, HEX5, HEX6, HEX7);
    output reg [8:0] LEDG;                                      // Green LED to show a value > 9
 	output [0:6] HEX0, HEX1, HEX2, HEX4, HEX5, HEX6, HEX7;      // Seven-segment display
    
-   wire [3:0] A1, A0, B1, B0, Z1, Z0;                          // Wires used to make module calls cleaner.
-   wire [4:0] T1, T0, SUM2, SUM1, SUM0;                        // Wires used to make module calls cleaner.
-   wire C1, C2;                                                // Wires used to make module calls cleaner.
+   wire [3:0] A1, A0, B1, B0;                                  // Wires used to make module calls cleaner.
+   wire [4:0] SUM2, SUM1, SUM0;                                // Wires used to make module calls cleaner.
    
 	assign LEDR = SW;                                           // Displays the input switches
    assign A1 = SW[15:12];
@@ -26,23 +25,12 @@ module Part6(SW, LEDR, LEDG, HEX0, HEX1, HEX2, HEX4, HEX5, HEX6, HEX7);
    // Check to see if A or B are > 9, if so turn on green LED.
    always @ (A1, A0, B1, B0) begin
       if(A1 > 9 | A0 > 9 | B1 > 9 | B0 > 9)
-         LEDG[8] = 1;
+         LEDG[8] = 1'b1;
       else
-         LEDG[8] = 0;
+         LEDG[8] = 1'b0;
    end
    
-   // Series of calls to calculate SUM0 which is the LSB.
-   Adder Add0(1'b0, A0, B0, T0);
-   MuxComparator MC0(C1, Z0, T0);
-   Adder Add1(1'b0, T0, Z0, SUM0);
-   Adder Add2(C1, A1, B1, T1);
-   
-   // Series of calls to calculate SUM1 which is the middle bit.
-   MuxComparator MC1(C2, Z1, T1);
-   Adder Add3(1'b0, T1, Z1, SUM1);
-   
-   // Series of calls to calculate SUM2 which is the MSB.
-   assign SUM2 = C2;
+   AdderAlgorithm Alg0(A0, A1, B0, B1, SUM0, SUM1, SUM2);
    
    HexDisplay H0(SUM0, HEX0);                                  // Display decimal value of SUM0 on HEX0
    HexDisplay H1(SUM1, HEX1);                                  // Display decimal value of SUM1 on HEX1

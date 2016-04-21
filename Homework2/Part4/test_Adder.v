@@ -1,0 +1,48 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 2, Part 4
+//
+// Module that tests the functionality of the Adder in Lab 2, Part 4 by using a Brute Force 
+// algorithm on all possible combinations of C, A, and B. 
+
+`timescale 1ns/1ns
+module test_Adder;
+
+reg C;                   // Input
+reg [3:0] A, B;          // Input
+wire [4:0] SUM;          // Output
+	
+Adder dut(C, A, B, SUM); // Module to be tested
+
+integer I, J, K;         // Variables used for the for loops.
+
+initial
+   begin
+      // For loop for C
+      for(I = 0; I < 2; I = I + 1) begin
+         C = I;
+         // For loop for A
+         for(J = 0; J < 10; J = J + 1) begin
+            A = J;
+            // For loop for B
+            for(K = 0; K < 10; K = K + 1) begin
+               B = K;
+               // Test for valid input
+               if(A > 9 | B > 9 | (C + A + B) > 19) begin
+                  $display("Math Error!");
+                  $stop;
+               end       // End if statement
+               #20;
+            end          // End A for loop
+            #20;
+         end             // End C for loop
+         #20;
+      end                // End C for loop
+      #20 $stop;
+   end                   // End initial
+
+// Monitor to display C, A, B, SUM
+initial
+   $monitor( $stime,, C,, A,, B,, SUM);
+
+endmodule

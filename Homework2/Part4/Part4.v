@@ -26,9 +26,9 @@ module Part4(SW, LEDR, LEDG, HEX0, HEX1, HEX4, HEX6);
    //Check to see if A or B are > 9, if so turn on green LED.
    always @ (A, B) begin
       if(A > 9 | B > 9)
-         LEDG[8] = 1;
+         LEDG[8] = 1'b1;
       else
-         LEDG[8] = 0;
+         LEDG[8] = 1'b0;
    end
    
    Adder A0(C, A, B, SUM);                      // Adder call, SUM becomes A + B + C

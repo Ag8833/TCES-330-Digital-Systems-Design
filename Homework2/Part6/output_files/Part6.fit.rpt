@@ -1,5 +1,5 @@
 Fitter report for Part6
-Sun Apr 17 20:28:15 2016
+Tue Apr 19 16:31:04 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -64,15 +64,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Sun Apr 17 20:28:15 2016      ;
+; Fitter Status                      ; Successful - Tue Apr 19 16:31:04 2016      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; Part6                                      ;
 ; Top-level Entity Name              ; Part6                                      ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 72 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 72 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 68 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 68 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                        ;
 ; Total registers                    ; 0                                          ;
 ; Total pins                         ; 90 / 529 ( 17 % )                          ;
@@ -149,12 +149,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.27        ;
+; Average used               ; 1.30        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   9.1%      ;
+;     Processors 2-4         ;  10.0%      ;
 +----------------------------+-------------+
 
 
@@ -245,441 +245,6 @@ agreement for further details.
 +--------------+----------------+--------------+------------------+---------------+----------------+
 ; Name         ; Ignored Entity ; Ignored From ; Ignored To       ; Ignored Value ; Ignored Source ;
 +--------------+----------------+--------------+------------------+---------------+----------------+
-; Location     ;                ;              ; AUD_ADCDAT       ; PIN_D2        ; QSF Assignment ;
-; Location     ;                ;              ; AUD_ADCLRCK      ; PIN_C2        ; QSF Assignment ;
-; Location     ;                ;              ; AUD_BCLK         ; PIN_F2        ; QSF Assignment ;
-; Location     ;                ;              ; AUD_DACDAT       ; PIN_D1        ; QSF Assignment ;
-; Location     ;                ;              ; AUD_DACLRCK      ; PIN_E3        ; QSF Assignment ;
-; Location     ;                ;              ; AUD_XCK          ; PIN_E1        ; QSF Assignment ;
-; Location     ;                ;              ; CLOCK2_50        ; PIN_AG14      ; QSF Assignment ;
-; Location     ;                ;              ; CLOCK3_50        ; PIN_AG15      ; QSF Assignment ;
-; Location     ;                ;              ; CLOCK_50         ; PIN_Y2        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[0]     ; PIN_R6        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[10]    ; PIN_R5        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[11]    ; PIN_AA5       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[12]    ; PIN_Y7        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[1]     ; PIN_V8        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[2]     ; PIN_U8        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[3]     ; PIN_P1        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[4]     ; PIN_V5        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[5]     ; PIN_W8        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[6]     ; PIN_W7        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[7]     ; PIN_AA7       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[8]     ; PIN_Y5        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_ADDR[9]     ; PIN_Y6        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_BA[0]       ; PIN_U7        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_BA[1]       ; PIN_R4        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_CAS_N       ; PIN_V7        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_CKE         ; PIN_AA6       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_CLK         ; PIN_AE5       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_CS_N        ; PIN_T4        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQM[0]      ; PIN_U2        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQM[1]      ; PIN_W4        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQM[2]      ; PIN_K8        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQM[3]      ; PIN_N8        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[0]       ; PIN_W3        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[10]      ; PIN_AB1       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[11]      ; PIN_AA3       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[12]      ; PIN_AB2       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[13]      ; PIN_AC1       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[14]      ; PIN_AB3       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[15]      ; PIN_AC2       ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[16]      ; PIN_M8        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[17]      ; PIN_L8        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[18]      ; PIN_P2        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[19]      ; PIN_N3        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[1]       ; PIN_W2        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[20]      ; PIN_N4        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[21]      ; PIN_M4        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[22]      ; PIN_M7        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[23]      ; PIN_L7        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[24]      ; PIN_U5        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[25]      ; PIN_R7        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[26]      ; PIN_R1        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[27]      ; PIN_R2        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[28]      ; PIN_R3        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[29]      ; PIN_T3        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[2]       ; PIN_V4        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[30]      ; PIN_U4        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[31]      ; PIN_U1        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[3]       ; PIN_W1        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[4]       ; PIN_V3        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[5]       ; PIN_V2        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[6]       ; PIN_V1        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[7]       ; PIN_U3        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[8]       ; PIN_Y3        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_DQ[9]       ; PIN_Y4        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_RAS_N       ; PIN_U6        ; QSF Assignment ;
-; Location     ;                ;              ; DRAM_WE_N        ; PIN_V6        ; QSF Assignment ;
-; Location     ;                ;              ; EEP_I2C_SCLK     ; PIN_D14       ; QSF Assignment ;
-; Location     ;                ;              ; EEP_I2C_SDAT     ; PIN_E14       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_GTX_CLK    ; PIN_A17       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_INT_N      ; PIN_A21       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_LINK100    ; PIN_C14       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_MDC        ; PIN_C20       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_MDIO       ; PIN_B21       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RST_N      ; PIN_C19       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_CLK     ; PIN_A15       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_COL     ; PIN_E15       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_CRS     ; PIN_D15       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_DATA[0] ; PIN_C16       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_DATA[1] ; PIN_D16       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_DATA[2] ; PIN_D17       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_DATA[3] ; PIN_C15       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_DV      ; PIN_C17       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_RX_ER      ; PIN_D18       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_TX_CLK     ; PIN_B17       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_TX_DATA[0] ; PIN_C18       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_TX_DATA[1] ; PIN_D19       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_TX_DATA[2] ; PIN_A19       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_TX_DATA[3] ; PIN_B19       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_TX_EN      ; PIN_A18       ; QSF Assignment ;
-; Location     ;                ;              ; ENET0_TX_ER      ; PIN_B18       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_GTX_CLK    ; PIN_C23       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_INT_N      ; PIN_D24       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_LINK100    ; PIN_D13       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_MDC        ; PIN_D23       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_MDIO       ; PIN_D25       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RST_N      ; PIN_D22       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_CLK     ; PIN_B15       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_COL     ; PIN_B22       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_CRS     ; PIN_D20       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_DATA[0] ; PIN_B23       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_DATA[1] ; PIN_C21       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_DATA[2] ; PIN_A23       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_DATA[3] ; PIN_D21       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_DV      ; PIN_A22       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_RX_ER      ; PIN_C24       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_TX_CLK     ; PIN_C22       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_TX_DATA[0] ; PIN_C25       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_TX_DATA[1] ; PIN_A26       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_TX_DATA[2] ; PIN_B26       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_TX_DATA[3] ; PIN_C26       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_TX_EN      ; PIN_B25       ; QSF Assignment ;
-; Location     ;                ;              ; ENET1_TX_ER      ; PIN_A25       ; QSF Assignment ;
-; Location     ;                ;              ; ENETCLK_25       ; PIN_A14       ; QSF Assignment ;
-; Location     ;                ;              ; EX_IO[0]         ; PIN_J10       ; QSF Assignment ;
-; Location     ;                ;              ; EX_IO[1]         ; PIN_J14       ; QSF Assignment ;
-; Location     ;                ;              ; EX_IO[2]         ; PIN_H13       ; QSF Assignment ;
-; Location     ;                ;              ; EX_IO[3]         ; PIN_H14       ; QSF Assignment ;
-; Location     ;                ;              ; EX_IO[4]         ; PIN_F14       ; QSF Assignment ;
-; Location     ;                ;              ; EX_IO[5]         ; PIN_E10       ; QSF Assignment ;
-; Location     ;                ;              ; EX_IO[6]         ; PIN_D9        ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[0]       ; PIN_AG12      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[10]      ; PIN_AE9       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[11]      ; PIN_AF9       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[12]      ; PIN_AA10      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[13]      ; PIN_AD8       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[14]      ; PIN_AC8       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[15]      ; PIN_Y10       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[16]      ; PIN_AA8       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[17]      ; PIN_AH12      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[18]      ; PIN_AC12      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[19]      ; PIN_AD12      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[1]       ; PIN_AH7       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[20]      ; PIN_AE10      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[21]      ; PIN_AD10      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[22]      ; PIN_AD11      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[2]       ; PIN_Y13       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[3]       ; PIN_Y14       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[4]       ; PIN_Y12       ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[5]       ; PIN_AA13      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[6]       ; PIN_AA12      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[7]       ; PIN_AB13      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[8]       ; PIN_AB12      ; QSF Assignment ;
-; Location     ;                ;              ; FL_ADDR[9]       ; PIN_AB10      ; QSF Assignment ;
-; Location     ;                ;              ; FL_CE_N          ; PIN_AG7       ; QSF Assignment ;
-; Location     ;                ;              ; FL_DQ[0]         ; PIN_AH8       ; QSF Assignment ;
-; Location     ;                ;              ; FL_DQ[1]         ; PIN_AF10      ; QSF Assignment ;
-; Location     ;                ;              ; FL_DQ[2]         ; PIN_AG10      ; QSF Assignment ;
-; Location     ;                ;              ; FL_DQ[3]         ; PIN_AH10      ; QSF Assignment ;
-; Location     ;                ;              ; FL_DQ[4]         ; PIN_AF11      ; QSF Assignment ;
-; Location     ;                ;              ; FL_DQ[5]         ; PIN_AG11      ; QSF Assignment ;
-; Location     ;                ;              ; FL_DQ[6]         ; PIN_AH11      ; QSF Assignment ;
-; Location     ;                ;              ; FL_DQ[7]         ; PIN_AF12      ; QSF Assignment ;
-; Location     ;                ;              ; FL_OE_N          ; PIN_AG8       ; QSF Assignment ;
-; Location     ;                ;              ; FL_RST_N         ; PIN_AE11      ; QSF Assignment ;
-; Location     ;                ;              ; FL_RY            ; PIN_Y1        ; QSF Assignment ;
-; Location     ;                ;              ; FL_WE_N          ; PIN_AC10      ; QSF Assignment ;
-; Location     ;                ;              ; FL_WP_N          ; PIN_AE12      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[0]          ; PIN_AB22      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[10]         ; PIN_AC19      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[11]         ; PIN_AF16      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[12]         ; PIN_AD19      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[13]         ; PIN_AF15      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[14]         ; PIN_AF24      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[15]         ; PIN_AE21      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[16]         ; PIN_AF25      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[17]         ; PIN_AC22      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[18]         ; PIN_AE22      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[19]         ; PIN_AF21      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[1]          ; PIN_AC15      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[20]         ; PIN_AF22      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[21]         ; PIN_AD22      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[22]         ; PIN_AG25      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[23]         ; PIN_AD25      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[24]         ; PIN_AH25      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[25]         ; PIN_AE25      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[26]         ; PIN_AG22      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[27]         ; PIN_AE24      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[28]         ; PIN_AH22      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[29]         ; PIN_AF26      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[2]          ; PIN_AB21      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[30]         ; PIN_AE20      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[31]         ; PIN_AG23      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[32]         ; PIN_AF20      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[33]         ; PIN_AH26      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[34]         ; PIN_AH23      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[35]         ; PIN_AG26      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[3]          ; PIN_Y17       ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[4]          ; PIN_AC21      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[5]          ; PIN_Y16       ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[6]          ; PIN_AD21      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[7]          ; PIN_AE16      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[8]          ; PIN_AD15      ; QSF Assignment ;
-; Location     ;                ;              ; GPIO[9]          ; PIN_AE15      ; QSF Assignment ;
-; Location     ;                ;              ; HEX3[0]          ; PIN_V21       ; QSF Assignment ;
-; Location     ;                ;              ; HEX3[1]          ; PIN_U21       ; QSF Assignment ;
-; Location     ;                ;              ; HEX3[2]          ; PIN_AB20      ; QSF Assignment ;
-; Location     ;                ;              ; HEX3[3]          ; PIN_AA21      ; QSF Assignment ;
-; Location     ;                ;              ; HEX3[4]          ; PIN_AD24      ; QSF Assignment ;
-; Location     ;                ;              ; HEX3[5]          ; PIN_AF23      ; QSF Assignment ;
-; Location     ;                ;              ; HEX3[6]          ; PIN_Y19       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKIN0      ; PIN_AH15      ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKIN_N1    ; PIN_J28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKIN_N2    ; PIN_Y28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKIN_P1    ; PIN_J27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKIN_P2    ; PIN_Y27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKOUT0     ; PIN_AD28      ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKOUT_N1   ; PIN_G24       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKOUT_N2   ; PIN_V24       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKOUT_P1   ; PIN_G23       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_CLKOUT_P2   ; PIN_V23       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_D[0]        ; PIN_AE26      ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_D[1]        ; PIN_AE28      ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_D[2]        ; PIN_AE27      ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_D[3]        ; PIN_AF27      ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[0]   ; PIN_F25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[10]  ; PIN_U26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[11]  ; PIN_L22       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[12]  ; PIN_N26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[13]  ; PIN_P26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[14]  ; PIN_R21       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[15]  ; PIN_R23       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[16]  ; PIN_T22       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[1]   ; PIN_C27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[2]   ; PIN_E26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[3]   ; PIN_G26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[4]   ; PIN_H26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[5]   ; PIN_K26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[6]   ; PIN_L24       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[7]   ; PIN_M26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[8]   ; PIN_R26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_N[9]   ; PIN_T26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[0]   ; PIN_F24       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[10]  ; PIN_U25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[11]  ; PIN_L21       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[12]  ; PIN_N25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[13]  ; PIN_P25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[14]  ; PIN_P21       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[15]  ; PIN_R22       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[16]  ; PIN_T21       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[1]   ; PIN_D26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[2]   ; PIN_F26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[3]   ; PIN_G25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[4]   ; PIN_H25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[5]   ; PIN_K25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[6]   ; PIN_L23       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[7]   ; PIN_M25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[8]   ; PIN_R25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_RX_D_P[9]   ; PIN_T25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[0]   ; PIN_D28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[10]  ; PIN_J26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[11]  ; PIN_L28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[12]  ; PIN_V26       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[13]  ; PIN_R28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[14]  ; PIN_U28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[15]  ; PIN_V28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[16]  ; PIN_V22       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[1]   ; PIN_E28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[2]   ; PIN_F28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[3]   ; PIN_G28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[4]   ; PIN_K28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[5]   ; PIN_M28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[6]   ; PIN_K22       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[7]   ; PIN_H24       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[8]   ; PIN_J24       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_N[9]   ; PIN_P28       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[0]   ; PIN_D27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[10]  ; PIN_J25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[11]  ; PIN_L27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[12]  ; PIN_V25       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[13]  ; PIN_R27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[14]  ; PIN_U27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[15]  ; PIN_V27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[16]  ; PIN_U22       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[1]   ; PIN_E27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[2]   ; PIN_F27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[3]   ; PIN_G27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[4]   ; PIN_K27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[5]   ; PIN_M27       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[6]   ; PIN_K21       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[7]   ; PIN_H23       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[8]   ; PIN_J23       ; QSF Assignment ;
-; Location     ;                ;              ; HSMC_TX_D_P[9]   ; PIN_P27       ; QSF Assignment ;
-; Location     ;                ;              ; I2C_SCLK         ; PIN_B7        ; QSF Assignment ;
-; Location     ;                ;              ; I2C_SDAT         ; PIN_A8        ; QSF Assignment ;
-; Location     ;                ;              ; IRDA_RXD         ; PIN_Y15       ; QSF Assignment ;
-; Location     ;                ;              ; KEY[0]           ; PIN_M23       ; QSF Assignment ;
-; Location     ;                ;              ; KEY[1]           ; PIN_M21       ; QSF Assignment ;
-; Location     ;                ;              ; KEY[2]           ; PIN_N21       ; QSF Assignment ;
-; Location     ;                ;              ; KEY[3]           ; PIN_R24       ; QSF Assignment ;
-; Location     ;                ;              ; LCD_BLON         ; PIN_L6        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_DATA[0]      ; PIN_L3        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_DATA[1]      ; PIN_L1        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_DATA[2]      ; PIN_L2        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_DATA[3]      ; PIN_K7        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_DATA[4]      ; PIN_K1        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_DATA[5]      ; PIN_K2        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_DATA[6]      ; PIN_M3        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_DATA[7]      ; PIN_M5        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_EN           ; PIN_L4        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_ON           ; PIN_L5        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_RS           ; PIN_M2        ; QSF Assignment ;
-; Location     ;                ;              ; LCD_RW           ; PIN_M1        ; QSF Assignment ;
-; Location     ;                ;              ; LEDR[16]         ; PIN_G16       ; QSF Assignment ;
-; Location     ;                ;              ; LEDR[17]         ; PIN_H15       ; QSF Assignment ;
-; Location     ;                ;              ; OTG_ADDR[0]      ; PIN_H7        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_ADDR[1]      ; PIN_C3        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_CS_N         ; PIN_A3        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DACK_N[0]    ; PIN_C4        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DACK_N[1]    ; PIN_D4        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[0]      ; PIN_J6        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[10]     ; PIN_G1        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[11]     ; PIN_G2        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[12]     ; PIN_G3        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[13]     ; PIN_F1        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[14]     ; PIN_F3        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[15]     ; PIN_G4        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[1]      ; PIN_K4        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[2]      ; PIN_J5        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[3]      ; PIN_K3        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[4]      ; PIN_J4        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[5]      ; PIN_J3        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[6]      ; PIN_J7        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[7]      ; PIN_H6        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[8]      ; PIN_H3        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DATA[9]      ; PIN_H4        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DREQ[0]      ; PIN_J1        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_DREQ[1]      ; PIN_B4        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_FSPEED       ; PIN_C6        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_INT[0]       ; PIN_A6        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_INT[1]       ; PIN_D5        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_LSPEED       ; PIN_B6        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_RD_N         ; PIN_B3        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_RST_N        ; PIN_C5        ; QSF Assignment ;
-; Location     ;                ;              ; OTG_WR_N         ; PIN_A4        ; QSF Assignment ;
-; Location     ;                ;              ; PS2_CLK          ; PIN_G6        ; QSF Assignment ;
-; Location     ;                ;              ; PS2_CLK2         ; PIN_G5        ; QSF Assignment ;
-; Location     ;                ;              ; PS2_DAT          ; PIN_H5        ; QSF Assignment ;
-; Location     ;                ;              ; PS2_DAT2         ; PIN_F5        ; QSF Assignment ;
-; Location     ;                ;              ; SD_CLK           ; PIN_AE13      ; QSF Assignment ;
-; Location     ;                ;              ; SD_CMD           ; PIN_AD14      ; QSF Assignment ;
-; Location     ;                ;              ; SD_DAT[0]        ; PIN_AE14      ; QSF Assignment ;
-; Location     ;                ;              ; SD_DAT[1]        ; PIN_AF13      ; QSF Assignment ;
-; Location     ;                ;              ; SD_DAT[2]        ; PIN_AB14      ; QSF Assignment ;
-; Location     ;                ;              ; SD_DAT[3]        ; PIN_AC14      ; QSF Assignment ;
-; Location     ;                ;              ; SD_WP_N          ; PIN_AF14      ; QSF Assignment ;
-; Location     ;                ;              ; SMA_CLKIN        ; PIN_AH14      ; QSF Assignment ;
-; Location     ;                ;              ; SMA_CLKOUT       ; PIN_AE23      ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[0]     ; PIN_AB7       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[10]    ; PIN_AF2       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[11]    ; PIN_AD3       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[12]    ; PIN_AB4       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[13]    ; PIN_AC3       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[14]    ; PIN_AA4       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[15]    ; PIN_AB11      ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[16]    ; PIN_AC11      ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[17]    ; PIN_AB9       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[18]    ; PIN_AB8       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[19]    ; PIN_T8        ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[1]     ; PIN_AD7       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[2]     ; PIN_AE7       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[3]     ; PIN_AC7       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[4]     ; PIN_AB6       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[5]     ; PIN_AE6       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[6]     ; PIN_AB5       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[7]     ; PIN_AC5       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[8]     ; PIN_AF5       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_ADDR[9]     ; PIN_T7        ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_CE_N        ; PIN_AF8       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[0]       ; PIN_AH3       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[10]      ; PIN_AE2       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[11]      ; PIN_AE1       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[12]      ; PIN_AE3       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[13]      ; PIN_AE4       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[14]      ; PIN_AF3       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[15]      ; PIN_AG3       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[1]       ; PIN_AF4       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[2]       ; PIN_AG4       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[3]       ; PIN_AH4       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[4]       ; PIN_AF6       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[5]       ; PIN_AG6       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[6]       ; PIN_AH6       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[7]       ; PIN_AF7       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[8]       ; PIN_AD1       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_DQ[9]       ; PIN_AD2       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_LB_N        ; PIN_AD4       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_OE_N        ; PIN_AD5       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_UB_N        ; PIN_AC4       ; QSF Assignment ;
-; Location     ;                ;              ; SRAM_WE_N        ; PIN_AE8       ; QSF Assignment ;
-; Location     ;                ;              ; SW[16]           ; PIN_Y24       ; QSF Assignment ;
-; Location     ;                ;              ; SW[17]           ; PIN_Y23       ; QSF Assignment ;
-; Location     ;                ;              ; TD_CLK27         ; PIN_B14       ; QSF Assignment ;
-; Location     ;                ;              ; TD_DATA[0]       ; PIN_E8        ; QSF Assignment ;
-; Location     ;                ;              ; TD_DATA[1]       ; PIN_A7        ; QSF Assignment ;
-; Location     ;                ;              ; TD_DATA[2]       ; PIN_D8        ; QSF Assignment ;
-; Location     ;                ;              ; TD_DATA[3]       ; PIN_C7        ; QSF Assignment ;
-; Location     ;                ;              ; TD_DATA[4]       ; PIN_D7        ; QSF Assignment ;
-; Location     ;                ;              ; TD_DATA[5]       ; PIN_D6        ; QSF Assignment ;
-; Location     ;                ;              ; TD_DATA[6]       ; PIN_E7        ; QSF Assignment ;
-; Location     ;                ;              ; TD_DATA[7]       ; PIN_F7        ; QSF Assignment ;
-; Location     ;                ;              ; TD_HS            ; PIN_E5        ; QSF Assignment ;
-; Location     ;                ;              ; TD_RESET_N       ; PIN_G7        ; QSF Assignment ;
-; Location     ;                ;              ; TD_VS            ; PIN_E4        ; QSF Assignment ;
-; Location     ;                ;              ; UART_CTS         ; PIN_G14       ; QSF Assignment ;
-; Location     ;                ;              ; UART_RTS         ; PIN_J13       ; QSF Assignment ;
-; Location     ;                ;              ; UART_RXD         ; PIN_G12       ; QSF Assignment ;
-; Location     ;                ;              ; UART_TXD         ; PIN_G9        ; QSF Assignment ;
-; Location     ;                ;              ; VGA_BLANK_N      ; PIN_F11       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_B[0]         ; PIN_B10       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_B[1]         ; PIN_A10       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_B[2]         ; PIN_C11       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_B[3]         ; PIN_B11       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_B[4]         ; PIN_A11       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_B[5]         ; PIN_C12       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_B[6]         ; PIN_D11       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_B[7]         ; PIN_D12       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_CLK          ; PIN_A12       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_G[0]         ; PIN_G8        ; QSF Assignment ;
-; Location     ;                ;              ; VGA_G[1]         ; PIN_G11       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_G[2]         ; PIN_F8        ; QSF Assignment ;
-; Location     ;                ;              ; VGA_G[3]         ; PIN_H12       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_G[4]         ; PIN_C8        ; QSF Assignment ;
-; Location     ;                ;              ; VGA_G[5]         ; PIN_B8        ; QSF Assignment ;
-; Location     ;                ;              ; VGA_G[6]         ; PIN_F10       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_G[7]         ; PIN_C9        ; QSF Assignment ;
-; Location     ;                ;              ; VGA_HS           ; PIN_G13       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_R[0]         ; PIN_E12       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_R[1]         ; PIN_E11       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_R[2]         ; PIN_D10       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_R[3]         ; PIN_F12       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_R[4]         ; PIN_G10       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_R[5]         ; PIN_J12       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_R[6]         ; PIN_H8        ; QSF Assignment ;
-; Location     ;                ;              ; VGA_R[7]         ; PIN_H10       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_SYNC_N       ; PIN_C10       ; QSF Assignment ;
-; Location     ;                ;              ; VGA_VS           ; PIN_C13       ; QSF Assignment ;
 ; I/O Standard ; Part6          ;              ; AUD_ADCDAT       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Part6          ;              ; AUD_ADCLRCK      ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Part6          ;              ; AUD_BCLK         ; 3.3-V LVTTL   ; QSF Assignment ;
@@ -1124,8 +689,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 263 ) ; 0.00 % ( 0 / 263 )         ; 0.00 % ( 0 / 263 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 263 ) ; 0.00 % ( 0 / 263 )         ; 0.00 % ( 0 / 263 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 259 ) ; 0.00 % ( 0 / 259 )         ; 0.00 % ( 0 / 259 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 259 ) ; 0.00 % ( 0 / 259 )         ; 0.00 % ( 0 / 259 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -1148,7 +713,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 253 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 249 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -1164,26 +729,26 @@ The pin-out file can be found in C:/Users/Andrew/Desktop/Quartus Workspace/Homew
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 72 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 72                     ;
+; Total logic elements                        ; 68 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 68                     ;
 ;     -- Register only                        ; 0                      ;
 ;     -- Combinational with a register        ; 0                      ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 51                     ;
-;     -- 3 input functions                    ; 13                     ;
-;     -- <=2 input functions                  ; 8                      ;
+;     -- 4 input functions                    ; 50                     ;
+;     -- 3 input functions                    ; 14                     ;
+;     -- <=2 input functions                  ; 4                      ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 60                     ;
-;     -- arithmetic mode                      ; 12                     ;
+;     -- normal mode                          ; 59                     ;
+;     -- arithmetic mode                      ; 9                      ;
 ;                                             ;                        ;
 ; Total registers*                            ; 0 / 117,053 ( 0 % )    ;
 ;     -- Dedicated logic registers            ; 0 / 114,480 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 9 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 8 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 90 / 529 ( 17 % )      ;
 ;     -- Clock pins                           ; 0 / 7 ( 0 % )          ;
@@ -1202,10 +767,10 @@ The pin-out file can be found in C:/Users/Andrew/Desktop/Quartus Workspace/Homew
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.2% / 0.1% / 0.2%     ;
-; Peak interconnect usage (total/H/V)         ; 1.2% / 1.4% / 1.0%     ;
+; Peak interconnect usage (total/H/V)         ; 1.0% / 1.3% / 1.0%     ;
 ; Maximum fan-out                             ; 10                     ;
 ; Highest non-global fan-out                  ; 10                     ;
-; Total fan-out                               ; 412                    ;
+; Total fan-out                               ; 404                    ;
 ; Average fan-out                             ; 1.57                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -1219,26 +784,26 @@ The pin-out file can be found in C:/Users/Andrew/Desktop/Quartus Workspace/Homew
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 72 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 72                    ; 0                              ;
+; Total logic elements                        ; 68 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 68                    ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;     -- Combinational with a register        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 51                    ; 0                              ;
-;     -- 3 input functions                    ; 13                    ; 0                              ;
-;     -- <=2 input functions                  ; 8                     ; 0                              ;
+;     -- 4 input functions                    ; 50                    ; 0                              ;
+;     -- 3 input functions                    ; 14                    ; 0                              ;
+;     -- <=2 input functions                  ; 4                     ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 60                    ; 0                              ;
-;     -- arithmetic mode                      ; 12                    ; 0                              ;
+;     -- normal mode                          ; 59                    ; 0                              ;
+;     -- arithmetic mode                      ; 9                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 0                     ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 114480 ( 0 % )    ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 9 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 8 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 90                    ; 0                              ;
@@ -1253,7 +818,7 @@ The pin-out file can be found in C:/Users/Andrew/Desktop/Quartus Workspace/Homew
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 407                   ; 5                              ;
+;     -- Total Connections                    ; 399                   ; 5                              ;
 ;     -- Registered Connections               ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -2213,25 +1778,20 @@ The pin-out file can be found in C:/Users/Andrew/Desktop/Quartus Workspace/Homew
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name      ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------+--------------+
-; |Part6                     ; 72 (5)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 90   ; 0            ; 72 (5)       ; 0 (0)             ; 0 (0)            ; |Part6                   ; work         ;
-;    |Adder:Add0|            ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |Part6|Adder:Add0        ; work         ;
-;    |Adder:Add1|            ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |Part6|Adder:Add1        ; work         ;
-;    |Adder:Add2|            ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; |Part6|Adder:Add2        ; work         ;
-;    |Adder:Add3|            ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |Part6|Adder:Add3        ; work         ;
-;    |HexDisplay:H0|         ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H0     ; work         ;
-;    |HexDisplay:H1|         ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H1     ; work         ;
-;    |HexDisplay:H4|         ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H4     ; work         ;
-;    |HexDisplay:H5|         ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H5     ; work         ;
-;    |HexDisplay:H6|         ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H6     ; work         ;
-;    |HexDisplay:H7|         ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H7     ; work         ;
-;    |MuxComparator:MC0|     ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Part6|MuxComparator:MC0 ; work         ;
-;    |MuxComparator:MC1|     ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Part6|MuxComparator:MC1 ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                  ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name        ; Library Name ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------+--------------+
+; |Part6                     ; 68 (5)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 90   ; 0            ; 68 (5)       ; 0 (0)             ; 0 (0)            ; |Part6                     ; work         ;
+;    |AdderAlgorithm:Alg0|   ; 19 (19)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 0 (0)            ; |Part6|AdderAlgorithm:Alg0 ; work         ;
+;    |HexDisplay:H0|         ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H0       ; work         ;
+;    |HexDisplay:H1|         ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H1       ; work         ;
+;    |HexDisplay:H4|         ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H4       ; work         ;
+;    |HexDisplay:H5|         ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H5       ; work         ;
+;    |HexDisplay:H6|         ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H6       ; work         ;
+;    |HexDisplay:H7|         ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part6|HexDisplay:H7       ; work         ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -2320,7 +1880,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[3]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[4]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[5]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[6]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[6]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[7]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[8]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[9]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
@@ -2333,184 +1893,184 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+--------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                               ;
-+--------------------------------+-------------------+---------+
-; Source Pin / Fanout            ; Pad To Core Index ; Setting ;
-+--------------------------------+-------------------+---------+
-; SW[0]                          ;                   ;         ;
-;      - Adder:Add0|SUM[0]~0     ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[0]~output          ; 0                 ; 6       ;
-; SW[1]                          ;                   ;         ;
-;      - Adder:Add0|SUM[1]~2     ; 0                 ; 6       ;
-;      - always0~3               ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H4|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[1]~output          ; 0                 ; 6       ;
-; SW[2]                          ;                   ;         ;
-;      - Adder:Add0|SUM[2]~4     ; 1                 ; 6       ;
-;      - always0~3               ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr6~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr5~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr4~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr3~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr2~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr1~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr0~0 ; 1                 ; 6       ;
-;      - LEDR[2]~output          ; 1                 ; 6       ;
-; SW[3]                          ;                   ;         ;
-;      - Adder:Add0|SUM[3]~6     ; 1                 ; 6       ;
-;      - always0~3               ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr6~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr5~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr4~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr3~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr2~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr1~0 ; 1                 ; 6       ;
-;      - HexDisplay:H4|WideOr0~0 ; 1                 ; 6       ;
-;      - LEDR[3]~output          ; 1                 ; 6       ;
-; SW[4]                          ;                   ;         ;
-;      - Adder:Add2|SUM[0]~0     ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[4]~output          ; 0                 ; 6       ;
-; SW[5]                          ;                   ;         ;
-;      - Adder:Add2|SUM[1]~2     ; 0                 ; 6       ;
-;      - always0~1               ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[5]~output          ; 0                 ; 6       ;
-; SW[6]                          ;                   ;         ;
-;      - Adder:Add2|SUM[2]~4     ; 1                 ; 6       ;
-;      - always0~1               ; 1                 ; 6       ;
-;      - HexDisplay:H5|WideOr6~0 ; 1                 ; 6       ;
-;      - HexDisplay:H5|WideOr5~0 ; 1                 ; 6       ;
-;      - HexDisplay:H5|WideOr4~0 ; 1                 ; 6       ;
-;      - HexDisplay:H5|WideOr3~0 ; 1                 ; 6       ;
-;      - HexDisplay:H5|WideOr2~0 ; 1                 ; 6       ;
-;      - HexDisplay:H5|WideOr1~0 ; 1                 ; 6       ;
-;      - HexDisplay:H5|WideOr0~0 ; 1                 ; 6       ;
-;      - LEDR[6]~output          ; 1                 ; 6       ;
-; SW[7]                          ;                   ;         ;
-;      - Adder:Add2|SUM[3]~6     ; 0                 ; 6       ;
-;      - always0~1               ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H5|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[7]~output          ; 0                 ; 6       ;
-; SW[8]                          ;                   ;         ;
-;      - Adder:Add0|SUM[0]~0     ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[8]~output          ; 0                 ; 6       ;
-; SW[9]                          ;                   ;         ;
-;      - Adder:Add0|SUM[1]~2     ; 1                 ; 6       ;
-;      - always0~2               ; 1                 ; 6       ;
-;      - HexDisplay:H6|WideOr6~0 ; 1                 ; 6       ;
-;      - HexDisplay:H6|WideOr5~0 ; 1                 ; 6       ;
-;      - HexDisplay:H6|WideOr4~0 ; 1                 ; 6       ;
-;      - HexDisplay:H6|WideOr3~0 ; 1                 ; 6       ;
-;      - HexDisplay:H6|WideOr2~0 ; 1                 ; 6       ;
-;      - HexDisplay:H6|WideOr1~0 ; 1                 ; 6       ;
-;      - HexDisplay:H6|WideOr0~0 ; 1                 ; 6       ;
-;      - LEDR[9]~output          ; 1                 ; 6       ;
-; SW[10]                         ;                   ;         ;
-;      - Adder:Add0|SUM[2]~4     ; 0                 ; 6       ;
-;      - always0~2               ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[10]~output         ; 0                 ; 6       ;
-; SW[11]                         ;                   ;         ;
-;      - Adder:Add0|SUM[3]~6     ; 0                 ; 6       ;
-;      - always0~2               ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H6|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[11]~output         ; 0                 ; 6       ;
-; SW[12]                         ;                   ;         ;
-;      - Adder:Add2|Add0~0       ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[12]~output         ; 0                 ; 6       ;
-; SW[13]                         ;                   ;         ;
-;      - Adder:Add2|Add0~2       ; 1                 ; 6       ;
-;      - always0~0               ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr6~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr5~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr4~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr3~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr2~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr1~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr0~0 ; 1                 ; 6       ;
-;      - LEDR[13]~output         ; 1                 ; 6       ;
-; SW[14]                         ;                   ;         ;
-;      - Adder:Add2|Add0~4       ; 1                 ; 6       ;
-;      - always0~0               ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr6~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr5~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr4~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr3~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr2~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr1~0 ; 1                 ; 6       ;
-;      - HexDisplay:H7|WideOr0~0 ; 1                 ; 6       ;
-;      - LEDR[14]~output         ; 1                 ; 6       ;
-; SW[15]                         ;                   ;         ;
-;      - Adder:Add2|Add0~6       ; 0                 ; 6       ;
-;      - always0~0               ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr6~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr5~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr4~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr3~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr2~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr1~0 ; 0                 ; 6       ;
-;      - HexDisplay:H7|WideOr0~0 ; 0                 ; 6       ;
-;      - LEDR[15]~output         ; 0                 ; 6       ;
-+--------------------------------+-------------------+---------+
++--------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                     ;
++--------------------------------------+-------------------+---------+
+; Source Pin / Fanout                  ; Pad To Core Index ; Setting ;
++--------------------------------------+-------------------+---------+
+; SW[0]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|SUM0[0]~0 ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[0]~output                ; 0                 ; 6       ;
+; SW[1]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|T0[1]~0   ; 0                 ; 6       ;
+;      - always0~3                     ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H4|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[1]~output                ; 0                 ; 6       ;
+; SW[2]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|T0[2]~2   ; 1                 ; 6       ;
+;      - always0~3                     ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr6~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr5~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr4~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr3~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr2~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr1~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr0~0       ; 1                 ; 6       ;
+;      - LEDR[2]~output                ; 1                 ; 6       ;
+; SW[3]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|T0[3]~4   ; 1                 ; 6       ;
+;      - always0~3                     ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr6~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr5~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr4~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr3~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr2~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr1~0       ; 1                 ; 6       ;
+;      - HexDisplay:H4|WideOr0~0       ; 1                 ; 6       ;
+;      - LEDR[3]~output                ; 1                 ; 6       ;
+; SW[4]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|Add2~2    ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[4]~output                ; 0                 ; 6       ;
+; SW[5]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|Add2~4    ; 0                 ; 6       ;
+;      - always0~1                     ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[5]~output                ; 0                 ; 6       ;
+; SW[6]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|Add2~6    ; 0                 ; 6       ;
+;      - always0~1                     ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[6]~output                ; 0                 ; 6       ;
+; SW[7]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|Add2~8    ; 0                 ; 6       ;
+;      - always0~1                     ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H5|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[7]~output                ; 0                 ; 6       ;
+; SW[8]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|SUM0[0]~0 ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[8]~output                ; 0                 ; 6       ;
+; SW[9]                                ;                   ;         ;
+;      - AdderAlgorithm:Alg0|T0[1]~0   ; 1                 ; 6       ;
+;      - always0~2                     ; 1                 ; 6       ;
+;      - HexDisplay:H6|WideOr6~0       ; 1                 ; 6       ;
+;      - HexDisplay:H6|WideOr5~0       ; 1                 ; 6       ;
+;      - HexDisplay:H6|WideOr4~0       ; 1                 ; 6       ;
+;      - HexDisplay:H6|WideOr3~0       ; 1                 ; 6       ;
+;      - HexDisplay:H6|WideOr2~0       ; 1                 ; 6       ;
+;      - HexDisplay:H6|WideOr1~0       ; 1                 ; 6       ;
+;      - HexDisplay:H6|WideOr0~0       ; 1                 ; 6       ;
+;      - LEDR[9]~output                ; 1                 ; 6       ;
+; SW[10]                               ;                   ;         ;
+;      - AdderAlgorithm:Alg0|T0[2]~2   ; 0                 ; 6       ;
+;      - always0~2                     ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[10]~output               ; 0                 ; 6       ;
+; SW[11]                               ;                   ;         ;
+;      - AdderAlgorithm:Alg0|T0[3]~4   ; 0                 ; 6       ;
+;      - always0~2                     ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H6|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[11]~output               ; 0                 ; 6       ;
+; SW[12]                               ;                   ;         ;
+;      - AdderAlgorithm:Alg0|Add2~2    ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[12]~output               ; 0                 ; 6       ;
+; SW[13]                               ;                   ;         ;
+;      - AdderAlgorithm:Alg0|Add2~4    ; 1                 ; 6       ;
+;      - always0~0                     ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr6~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr5~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr4~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr3~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr2~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr1~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr0~0       ; 1                 ; 6       ;
+;      - LEDR[13]~output               ; 1                 ; 6       ;
+; SW[14]                               ;                   ;         ;
+;      - AdderAlgorithm:Alg0|Add2~6    ; 1                 ; 6       ;
+;      - always0~0                     ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr6~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr5~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr4~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr3~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr2~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr1~0       ; 1                 ; 6       ;
+;      - HexDisplay:H7|WideOr0~0       ; 1                 ; 6       ;
+;      - LEDR[14]~output               ; 1                 ; 6       ;
+; SW[15]                               ;                   ;         ;
+;      - AdderAlgorithm:Alg0|Add2~8    ; 0                 ; 6       ;
+;      - always0~0                     ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr6~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr5~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr4~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr3~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr2~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr1~0       ; 0                 ; 6       ;
+;      - HexDisplay:H7|WideOr0~0       ; 0                 ; 6       ;
+;      - LEDR[15]~output               ; 0                 ; 6       ;
++--------------------------------------+-------------------+---------+
 
 
 +-------------------------------------------------+
@@ -2518,106 +2078,94 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 114 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 96 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 152 / 209,544 ( < 1 % ) ;
-; Direct links          ; 4 / 342,891 ( < 1 % )   ;
+; Block interconnects   ; 108 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 89 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 173 / 209,544 ( < 1 % ) ;
+; Direct links          ; 3 / 342,891 ( < 1 % )   ;
 ; Global clocks         ; 0 / 20 ( 0 % )          ;
 ; Local interconnects   ; 13 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 68 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 121 / 289,782 ( < 1 % ) ;
+; R24 interconnects     ; 73 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 86 / 289,782 ( < 1 % )  ;
 +-----------------------+-------------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 8.00) ; Number of LABs  (Total = 9) ;
+; Number of Logic Elements  (Average = 8.50) ; Number of LABs  (Total = 8) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 2                           ;
+; 1                                          ; 0                           ;
 ; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
 ; 5                                          ; 0                           ;
-; 6                                          ; 0                           ;
-; 7                                          ; 1                           ;
-; 8                                          ; 2                           ;
+; 6                                          ; 2                           ;
+; 7                                          ; 0                           ;
+; 8                                          ; 3                           ;
 ; 9                                          ; 1                           ;
-; 10                                         ; 1                           ;
-; 11                                         ; 0                           ;
+; 10                                         ; 0                           ;
+; 11                                         ; 1                           ;
 ; 12                                         ; 1                           ;
 ; 13                                         ; 0                           ;
 ; 14                                         ; 0                           ;
 ; 15                                         ; 0                           ;
-; 16                                         ; 1                           ;
+; 16                                         ; 0                           ;
 +--------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 8.00) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced  (Average = 8.38) ; Number of LABs  (Total = 8) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 2                           ;
+; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 2                           ;
+; 6                                           ; 2                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 3                           ;
 ; 9                                           ; 1                           ;
-; 10                                          ; 1                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 1                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 0                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 1                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 2                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 6.89) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced Out  (Average = 7.13) ; Number of LABs  (Total = 8) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 2                           ;
+; 1                                               ; 0                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
-; 5                                               ; 1                           ;
-; 6                                               ; 0                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 3                           ;
 ; 7                                               ; 1                           ;
 ; 8                                               ; 4                           ;
-; 9                                               ; 0                           ;
-; 10                                              ; 0                           ;
-; 11                                              ; 0                           ;
-; 12                                              ; 0                           ;
-; 13                                              ; 0                           ;
-; 14                                              ; 0                           ;
-; 15                                              ; 0                           ;
-; 16                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 5.56) ; Number of LABs  (Total = 9) ;
+; Number of Distinct Inputs  (Average = 5.63) ; Number of LABs  (Total = 8) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 4                           ;
-; 5                                           ; 2                           ;
+; 4                                           ; 5                           ;
+; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 1                           ;
 ; 8                                           ; 1                           ;
-; 9                                           ; 1                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -2847,443 +2395,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Warning (15705): Ignored locations or region assignments to the following nodes
-    Warning (15706): Node "AUD_ADCDAT" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "AUD_ADCLRCK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "AUD_BCLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "AUD_DACDAT" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "AUD_DACLRCK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "AUD_XCK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "CLOCK2_50" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "CLOCK3_50" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "CLOCK_50" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_ADDR[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_BA[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_BA[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_CAS_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_CKE" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_CS_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQM[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQM[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQM[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQM[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[17]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[18]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[19]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[20]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[21]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[22]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[23]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[24]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[25]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[26]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[27]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[28]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[29]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[30]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[31]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_DQ[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_RAS_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "DRAM_WE_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EEP_I2C_SCLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EEP_I2C_SDAT" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_GTX_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_INT_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_LINK100" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_MDC" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_MDIO" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RST_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_COL" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_CRS" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_DATA[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_DATA[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_DATA[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_DATA[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_DV" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_RX_ER" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_TX_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_TX_DATA[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_TX_DATA[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_TX_DATA[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_TX_DATA[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_TX_EN" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET0_TX_ER" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_GTX_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_INT_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_LINK100" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_MDC" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_MDIO" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RST_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_COL" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_CRS" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_DATA[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_DATA[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_DATA[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_DATA[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_DV" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_RX_ER" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_TX_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_TX_DATA[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_TX_DATA[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_TX_DATA[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_TX_DATA[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_TX_EN" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENET1_TX_ER" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "ENETCLK_25" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EX_IO[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EX_IO[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EX_IO[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EX_IO[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EX_IO[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EX_IO[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "EX_IO[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[17]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[18]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[19]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[20]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[21]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[22]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_ADDR[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_CE_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_DQ[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_DQ[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_DQ[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_DQ[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_DQ[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_DQ[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_DQ[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_DQ[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_OE_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_RST_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_RY" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_WE_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "FL_WP_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[17]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[18]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[19]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[20]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[21]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[22]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[23]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[24]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[25]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[26]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[27]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[28]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[29]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[30]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[31]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[32]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[33]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[34]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[35]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "GPIO[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX3[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX3[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX3[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX3[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX3[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX3[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HEX3[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKIN0" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKIN_N1" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKIN_N2" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKIN_P1" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKIN_P2" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKOUT0" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKOUT_N1" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKOUT_N2" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKOUT_P1" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_CLKOUT_P2" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_D[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_D[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_D[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_D[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_N[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_RX_D_P[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_N[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "HSMC_TX_D_P[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "I2C_SCLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "I2C_SDAT" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "IRDA_RXD" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "KEY[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "KEY[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "KEY[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "KEY[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_BLON" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_DATA[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_DATA[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_DATA[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_DATA[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_DATA[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_DATA[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_DATA[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_DATA[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_EN" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_ON" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_RS" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LCD_RW" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LEDR[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LEDR[17]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_ADDR[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_ADDR[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_CS_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DACK_N[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DACK_N[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DATA[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DREQ[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_DREQ[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_FSPEED" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_INT[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_INT[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_LSPEED" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_RD_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_RST_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "OTG_WR_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "PS2_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "PS2_CLK2" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "PS2_DAT" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "PS2_DAT2" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SD_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SD_CMD" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SD_DAT[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SD_DAT[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SD_DAT[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SD_DAT[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SD_WP_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SMA_CLKIN" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SMA_CLKOUT" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[17]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[18]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[19]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_ADDR[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_CE_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[10]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[11]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[12]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[13]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[14]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[15]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[8]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_DQ[9]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_LB_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_OE_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_UB_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SRAM_WE_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SW[16]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "SW[17]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_CLK27" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_DATA[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_DATA[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_DATA[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_DATA[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_DATA[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_DATA[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_DATA[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_DATA[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_HS" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_RESET_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "TD_VS" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "UART_CTS" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "UART_RTS" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "UART_RXD" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "UART_TXD" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_BLANK_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_B[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_B[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_B[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_B[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_B[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_B[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_B[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_B[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_CLK" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_G[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_G[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_G[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_G[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_G[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_G[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_G[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_G[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_HS" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_R[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_R[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_R[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_R[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_R[6]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -3292,7 +2404,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X81_Y0 to location X91_Y11
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X69_Y0 to location X80_Y11
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
@@ -3305,9 +2417,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part6/output_files/Part6.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 441 warnings
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 1536 megabytes
-    Info: Processing ended: Sun Apr 17 20:28:15 2016
+    Info: Processing ended: Tue Apr 19 16:31:04 2016
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:15
 

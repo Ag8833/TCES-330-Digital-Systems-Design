@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4
+vAdder
+Z1 !s110 1461112504
+!i10b 1
+!s100 GS]0c2[8`F>jnR3QDAK3b3
+I9a_8V`Bodl9BITaob=;bL1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1460964560
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/Adder.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/Adder.v
+L0 7
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1461112504.688000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/Adder.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/Adder.v|
+!i113 1
+Z5 o-work work
+n@adder
+vHexDisplay
+R1
+!i10b 1
+!s100 nz1jzbj=eNWdzYhKQBP_:0
+IWajgj0j3z<]Ul^W;=nHei2
+R2
+R0
+R3
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/HexDisplay.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/HexDisplay.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1461112504.742000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/HexDisplay.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/HexDisplay.v|
+!i113 1
+R5
+n@hex@display
+vtest_Adder
+R1
+!i10b 1
+!s100 =:8>2IYRTQ2YNI<EPJo@K2
+I?n8:ALN3SBIHce0NUaAOA0
+R2
+R0
+w1461112496
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/test_Adder.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/test_Adder.v
+L0 9
+R4
+r1
+!s85 0
+31
+!s108 1461112504.800000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/test_Adder.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Andrew/Desktop/Quartus Workspace/Homework2/Part4/test_Adder.v|
+!i113 1
+R5
+ntest_@adder
