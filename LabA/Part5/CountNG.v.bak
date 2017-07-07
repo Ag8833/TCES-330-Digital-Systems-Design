@@ -1,0 +1,22 @@
+// TCES 330, Spring 2016
+// Vladislav Psarev, Brandon Watt, and Andrew Gates
+// Lab A, Part 4
+//
+// TO DO
+
+module CountNG ( Clock, Enable, Clear, Q );
+  parameter N = 4;      // default size of counter (bits)
+  input Clock;          // system clock
+  input Enable;         //
+  input Clear;          // 
+  output reg [N-1:0]Q;  // counter output
+
+  // Always statement to either increment Q or reset Q to 0
+  always @(posedge Clock) begin
+		if (Enable == 1'b1)
+			Q <= Q + 1'b1;
+			
+		if (Clear == 1'b1)
+			Q <=  4'b0;
+  end
+endmodule

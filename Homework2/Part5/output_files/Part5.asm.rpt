@@ -1,5 +1,5 @@
 Assembler report for Part5
-Tue Apr 19 16:33:14 2016
+Wed Apr 20 21:44:00 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Apr 19 16:33:14 2016 ;
+; Assembler Status      ; Successful - Wed Apr 20 21:44:00 2016 ;
 ; Revision Name         ; Part5                                 ;
 ; Top-level Entity Name ; Part5                                 ;
 ; Family                ; Cyclone IV E                          ;
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Tue Apr 19 16:33:09 2016
+    Info: Processing started: Wed Apr 20 21:43:55 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Part5 -c Part5
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 606 megabytes
-    Info: Processing ended: Tue Apr 19 16:33:14 2016
+    Info: Peak virtual memory: 608 megabytes
+    Info: Processing ended: Wed Apr 20 21:44:00 2016
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

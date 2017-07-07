@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ag883_000/Desktop/Quartus Workspace/DragRace
+vDRCTC
+!s110 1463421674
+!i10b 1
+!s100 I7agoOH[7_kWR1zb`b1[U2
+I<6kSS6gSY>7VhEBW^=L_=2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1463421671
+8C:/Users/ag883_000/Desktop/Quartus Workspace/DragRace/DRCTC.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/DragRace/DRCTC.v
+L0 7
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1463421674.876000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/DragRace/DRCTC.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ag883_000/Desktop/Quartus Workspace/DragRace/DRCTC.v|
+!i113 1
+Z3 o-work work
+n@d@r@c@t@c
+vTestDragRace
+!s110 1463421675
+!i10b 1
+!s100 Yf;B;I6Rz0<>`HlFPUen^1
+I8zBR>BlJJaDlBLnn?=L0e3
+R1
+R0
+w1463420899
+8C:/Users/ag883_000/Desktop/Quartus Workspace/DragRace/TestDragRace.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/DragRace/TestDragRace.v
+L0 10
+R2
+r1
+!s85 0
+31
+!s108 1463421675.782000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/DragRace/TestDragRace.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ag883_000/Desktop/Quartus Workspace/DragRace/TestDragRace.v|
+!i113 1
+R3
+n@test@drag@race

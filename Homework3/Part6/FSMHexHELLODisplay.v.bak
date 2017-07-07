@@ -1,0 +1,52 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 3, Part 2
+//
+// Module that uses KEY0 as the clock, SW1 as an input (w), and SW0 as a synchronous reset.
+// The module will use an FSM to detect when 4 consecutive 0's or 1's have occured. It will
+// progress through the states A - I depending on the value of w when the clock pulses. If the 
+// Reset is 0 then the state will stay at A. If the reset is 1 and w is 0 it will progress from
+// A -> B -> C -> D -> E where E will cause z to be a value of 1. If the Reset is 1 and w is 1 it 
+// will progress from A -> F -> G -> H -> I where I will cause z to be a value of 1.
+
+module FSMHexHELLODisplay (Clock, Reset, Shift, State, StateNext);
+   input Clock, Reset;
+   output Shift;
+   output reg [3:0] State, StateNext;   // State represents current state, StateNext represents next state
+
+   // Binary values representing states A - I
+   localparam ALLBLANK = 4'b0000, H = 4'b0001, E = 4'b0010, L2 = 4'b0011, L1 = 4'b0100, 
+      O = 4'b0101, B3 = 4'b0110, B2 = 4'b0111, B1 = 4'b1000, ROTATE = 4'b1001;
+  
+   // State Table (Combinational Logic)
+   always @(Clock, State)
+   begin: state_table
+      case (State)
+         ALLBLANK: StateNext = H;
+         H: StateNext = E;
+         E: StateNext = L2;
+         L2: StateNext = L1;
+         L1: StateNext = O;
+         O: StateNext = B3;
+         B3: StateNext = B2;
+         B2: StateNext = B1;
+         B1: StateNext = ROTATE;
+         ROTATE: StateNext = ROTATE;
+         default: StateNext = 4'b0000;
+      endcase
+   end
+   
+   // State FFS (State Register)
+   always @(posedge Clock)
+   begin: state_FFs
+      if(Reset == 0)begin
+         State <= ALLBLANK;             // If reset is 0 keep state at ALLBLANK
+      end
+      else begin
+         State <= StateNext;     // Else progress the state
+      end
+   end 
+   
+   assign Shift = (State == ROTATE);
+   
+endmodule

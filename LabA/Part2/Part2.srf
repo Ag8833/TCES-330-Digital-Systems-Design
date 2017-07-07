@@ -1,0 +1,1 @@
+{ "" "" "" "The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command." {  } {  } 0 332168 "" 0 0 "Quartus II" 0 -1 0 ""}

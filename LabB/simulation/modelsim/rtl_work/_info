@@ -1,0 +1,318 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/CES/330-Digital System Design/LabB/simulation/modelsim
+vALU74381
+Z1 !s110 1464812255
+!i10b 1
+!s100 Sf3R=o5`o5W4bY9Di=6F@3
+Iofe<9eZFbkQjW8@IIH<BH1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1464811186
+8H:/CES/330-Digital System Design/LabB/ALU74381.v
+FH:/CES/330-Digital System Design/LabB/ALU74381.v
+L0 18
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1464812255.849000
+!s107 H:/CES/330-Digital System Design/LabB/ALU74381.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/ALU74381.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+H:/CES/330-Digital System Design/LabB}
+n@a@l@u74381
+vButtonSync
+R1
+!i10b 1
+!s100 @XSNlVF2@I_@`@H:5WH^A1
+IlkLO1B`T^Oi061M]AffLP2
+R2
+R0
+w1464031699
+8H:/CES/330-Digital System Design/LabB/ButtonSync.v
+FH:/CES/330-Digital System Design/LabB/ButtonSync.v
+L0 11
+R3
+r1
+!s85 0
+31
+!s108 1464812255.552000
+!s107 H:/CES/330-Digital System Design/LabB/ButtonSync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/ButtonSync.v|
+!i113 1
+R4
+R5
+n@button@sync
+vControlUnit
+Z6 !s110 1464812256
+!i10b 1
+!s100 HSaa[fa5;@fIL>SBJha3S3
+IHnY5^LOg]KB4WU[i029j91
+R2
+R0
+w1464805352
+8H:/CES/330-Digital System Design/LabB/ControlUnit.v
+FH:/CES/330-Digital System Design/LabB/ControlUnit.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1464812256.457000
+!s107 H:/CES/330-Digital System Design/LabB/ControlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/ControlUnit.v|
+!i113 1
+R4
+R5
+n@control@unit
+vDataPath
+R6
+!i10b 1
+!s100 o[oQFJFH?]NghaS5D8S3:3
+IF5UioQ>^1PM_Vb_aVnXh`3
+R2
+R0
+w1464810397
+8H:/CES/330-Digital System Design/LabB/DataPath.v
+FH:/CES/330-Digital System Design/LabB/DataPath.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1464812256.769000
+!s107 H:/CES/330-Digital System Design/LabB/DataPath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/DataPath.v|
+!i113 1
+R4
+R5
+n@data@path
+vDataRAM
+Z7 !s110 1464812257
+!i10b 1
+!s100 M1K;Z:8V<^lla2NG5YKgc0
+I2a`m43F?gch19@jV]8V>_2
+R2
+R0
+w1464202398
+8H:/CES/330-Digital System Design/LabB/DataRAM.v
+FH:/CES/330-Digital System Design/LabB/DataRAM.v
+Z8 L0 40
+R3
+r1
+!s85 0
+31
+!s108 1464812257.690000
+!s107 H:/CES/330-Digital System Design/LabB/DataRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/DataRAM.v|
+!i113 1
+R4
+R5
+n@data@r@a@m
+vHex7seg
+Z9 !s110 1464812258
+!i10b 1
+!s100 7_;?d0_546fAhn>KZ9:W83
+ILF:IJ6S`O<jmP<D^OQ>9?1
+R2
+R0
+w1464205913
+8H:/CES/330-Digital System Design/LabB/Hex7seg.v
+FH:/CES/330-Digital System Design/LabB/Hex7seg.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1464812258.626000
+!s107 H:/CES/330-Digital System Design/LabB/Hex7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/Hex7seg.v|
+!i113 1
+R4
+R5
+n@hex7seg
+vInstROM
+Z10 !s110 1464812259
+!i10b 1
+!s100 H4FPQJblidCDG]zKbVWcn3
+I:]D9dO]AYAX[:U`_iEYXX1
+R2
+R0
+w1464208533
+8H:/CES/330-Digital System Design/LabB/InstROM.v
+FH:/CES/330-Digital System Design/LabB/InstROM.v
+R8
+R3
+r1
+!s85 0
+31
+!s108 1464812258.938000
+!s107 H:/CES/330-Digital System Design/LabB/InstROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/InstROM.v|
+!i113 1
+R4
+R5
+n@inst@r@o@m
+vKeyFilter
+R1
+!i10b 1
+!s100 nAok3QE2C>EH=b]@@d`a>0
+IlQ7jU`>7feck2ojDYbNOo1
+R2
+R0
+w1464214765
+8H:/CES/330-Digital System Design/LabB/KeyFilter.v
+FH:/CES/330-Digital System Design/LabB/KeyFilter.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1464812255.225000
+!s107 H:/CES/330-Digital System Design/LabB/KeyFilter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/KeyFilter.v|
+!i113 1
+R4
+R5
+n@key@filter
+vLabB
+R6
+!i10b 1
+!s100 449?lk]gGb_2MbKGXoK=z2
+I][g:2F?f3b2ZThbH:mOQ[3
+R2
+R0
+w1464216617
+8H:/CES/330-Digital System Design/LabB/LabB.v
+FH:/CES/330-Digital System Design/LabB/LabB.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1464812256.161000
+!s107 H:/CES/330-Digital System Design/LabB/LabB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/LabB.v|
+!i113 1
+R4
+R5
+n@lab@b
+vMux8t1Nw
+R9
+!i10b 1
+!s100 8=QQbnJg[z3jc]XjOiUhB0
+I_AN^JKdW::CdaNSOcGGF40
+R2
+R0
+w1464215145
+8H:/CES/330-Digital System Design/LabB/Mux8t1Nw.v
+FH:/CES/330-Digital System Design/LabB/Mux8t1Nw.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1464812258.314000
+!s107 H:/CES/330-Digital System Design/LabB/Mux8t1Nw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/Mux8t1Nw.v|
+!i113 1
+R4
+R5
+n@mux8t1@nw
+vProcessor
+R7
+!i10b 1
+!s100 :1eZ?Z0j<hiC0jB_PZ@S53
+Ia5IHVe@3Fje`nY=U`ED0S1
+R2
+R0
+w1464215374
+8H:/CES/330-Digital System Design/LabB/Processor.v
+FH:/CES/330-Digital System Design/LabB/Processor.v
+L0 10
+R3
+r1
+!s85 0
+31
+!s108 1464812257.393000
+!s107 H:/CES/330-Digital System Design/LabB/Processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/Processor.v|
+!i113 1
+R4
+R5
+n@processor
+vRegRAM
+R7
+!i10b 1
+!s100 Ojile>_;SJ@0N>`[0Re`F3
+I:1C6Oz6:MW^<:A[3@V^1i1
+R2
+R0
+w1464200183
+8H:/CES/330-Digital System Design/LabB/RegRAM.v
+FH:/CES/330-Digital System Design/LabB/RegRAM.v
+R8
+R3
+r1
+!s85 0
+31
+!s108 1464812257.081000
+!s107 H:/CES/330-Digital System Design/LabB/RegRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/RegRAM.v|
+!i113 1
+R4
+R5
+n@reg@r@a@m
+vStateMachine
+R9
+!i10b 1
+!s100 RE[FHYZ1OR3TzXDDi?6SR2
+Ic_HYlC=]C8bSMA:S><b;h2
+R2
+R0
+w1464812058
+8H:/CES/330-Digital System Design/LabB/StateMachine.v
+FH:/CES/330-Digital System Design/LabB/StateMachine.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1464812258.002000
+!s107 H:/CES/330-Digital System Design/LabB/StateMachine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/StateMachine.v|
+!i113 1
+R4
+R5
+n@state@machine
+vtestProcessor
+R10
+!i10b 1
+!s100 5[af;VH:Bnb5Zk9A8EH4a2
+I=aaK1@c8f]e[TYBnRg>Z:2
+R2
+R0
+w1464031692
+8H:/CES/330-Digital System Design/LabB/testProcessor.v
+FH:/CES/330-Digital System Design/LabB/testProcessor.v
+L0 7
+R3
+r1
+!s85 0
+31
+!s108 1464812259.250000
+!s107 H:/CES/330-Digital System Design/LabB/testProcessor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/CES/330-Digital System Design/LabB|H:/CES/330-Digital System Design/LabB/testProcessor.v|
+!i113 1
+R4
+R5
+ntest@processor

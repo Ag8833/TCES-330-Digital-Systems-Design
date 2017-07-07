@@ -1,0 +1,10 @@
+
+State Machine - |DragRace|DRCTC:dragrace|State
+Name State.SRED State.SGRN State.SA3 State.SA2 State.SA1 State.SSTAGE State.SIDLE 
+State.SIDLE 0 0 0 0 0 0 0 
+State.SSTAGE 0 0 0 0 0 1 1 
+State.SA1 0 0 0 0 1 0 1 
+State.SA2 0 0 0 1 0 0 1 
+State.SA3 0 0 1 0 0 0 1 
+State.SGRN 0 1 0 0 0 0 1 
+State.SRED 1 0 0 0 0 0 1 

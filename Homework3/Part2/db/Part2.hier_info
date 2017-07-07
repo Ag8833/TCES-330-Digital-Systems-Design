@@ -1,0 +1,37 @@
+|Part2
+KEY[0] => Clock.IN1
+SW[0] => Reset.IN1
+SW[1] => w.IN1
+LEDG[0] <= FSM4ConsecutiveCounter:FSM0.port3
+LEDR[0] <= FSM4ConsecutiveCounter:FSM0.port4
+LEDR[1] <= FSM4ConsecutiveCounter:FSM0.port4
+LEDR[2] <= FSM4ConsecutiveCounter:FSM0.port4
+LEDR[3] <= FSM4ConsecutiveCounter:FSM0.port4
+
+
+|Part2|FSM4ConsecutiveCounter:FSM0
+Clock => State~1.DATAIN
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+w => Selector2.IN2
+w => StateNext.G.DATAB
+w => StateNext.H.DATAB
+w => Selector3.IN1
+w => Selector0.IN1
+w => StateNext.C.DATAB
+w => StateNext.D.DATAB
+w => Selector1.IN1
+z <= always2.DB_MAX_OUTPUT_PORT_TYPE
+CurrentState[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+CurrentState[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+CurrentState[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+CurrentState[3] <= CurrentState[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

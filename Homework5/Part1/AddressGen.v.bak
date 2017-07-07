@@ -1,0 +1,14 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 5, Part 1
+//
+// TO DO
+
+module AddressGen(Clk, Reset, Address);
+   input Clk;                 // Our system clock
+   input Reset;               // Resets the entire system
+   output reg [7:0] Address;  // Address into memory
+
+
+
+endmodule

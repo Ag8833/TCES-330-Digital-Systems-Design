@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2
+vCountNG
+!s110 1461794302
+!i10b 1
+!s100 H`PGfE_dfMNm0agP;^1;a2
+I>kLji>OX@VgOZ`e?WhD3?2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1461790801
+8C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2/CountNG.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2/CountNG.v
+L0 8
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1461794302.108000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2/CountNG.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2/CountNG.v|
+!i113 1
+Z3 o-work work
+n@count@n@g
+vtest_CountNG
+!s110 1461794300
+!i10b 1
+!s100 C57L@^2nIbNQ81n_0RTVV0
+I44>g>l4X6e52A<D0f]Xfg0
+R1
+R0
+w1461794289
+8C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2/test_CountNG_outline.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2/test_CountNG_outline.v
+L0 10
+R2
+r1
+!s85 0
+31
+!s108 1461794300.077000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2/test_CountNG_outline.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part2/test_CountNG_outline.v|
+!i113 1
+R3
+ntest_@count@n@g

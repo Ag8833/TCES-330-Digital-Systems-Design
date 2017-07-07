@@ -1,0 +1,228 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do LabB_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/KeyFilter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:35 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/KeyFilter.v 
+# -- Compiling module KeyFilter
+# 
+# Top level modules:
+# 	KeyFilter
+# End time: 13:17:35 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/ButtonSync.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:35 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/ButtonSync.v 
+# -- Compiling module ButtonSync
+# 
+# Top level modules:
+# 	ButtonSync
+# End time: 13:17:35 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/ALU74381.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:35 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/ALU74381.v 
+# -- Compiling module ALU74381
+# 
+# Top level modules:
+# 	ALU74381
+# End time: 13:17:35 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/LabB.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:36 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/LabB.v 
+# -- Compiling module LabB
+# 
+# Top level modules:
+# 	LabB
+# End time: 13:17:36 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/ControlUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:36 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/ControlUnit.v 
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 13:17:36 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/DataPath.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:36 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/DataPath.v 
+# -- Compiling module DataPath
+# 
+# Top level modules:
+# 	DataPath
+# End time: 13:17:36 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/RegRAM.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:37 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/RegRAM.v 
+# -- Compiling module RegRAM
+# 
+# Top level modules:
+# 	RegRAM
+# End time: 13:17:37 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/Processor.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:37 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/Processor.v 
+# -- Compiling module Processor
+# 
+# Top level modules:
+# 	Processor
+# End time: 13:17:37 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/DataRAM.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:37 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/DataRAM.v 
+# -- Compiling module DataRAM
+# 
+# Top level modules:
+# 	DataRAM
+# End time: 13:17:37 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/StateMachine.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:37 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/StateMachine.v 
+# -- Compiling module StateMachine
+# 
+# Top level modules:
+# 	StateMachine
+# End time: 13:17:38 on Jun 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/Mux8t1Nw.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:38 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/Mux8t1Nw.v 
+# -- Compiling module Mux8t1Nw
+# 
+# Top level modules:
+# 	Mux8t1Nw
+# End time: 13:17:38 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/Hex7seg.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:38 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/Hex7seg.v 
+# -- Compiling module Hex7seg
+# 
+# Top level modules:
+# 	Hex7seg
+# End time: 13:17:38 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/InstROM.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:38 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/InstROM.v 
+# -- Compiling module InstROM
+# 
+# Top level modules:
+# 	InstROM
+# End time: 13:17:39 on Jun 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+H:/CES/330-Digital\ System\ Design/LabB {H:/CES/330-Digital System Design/LabB/testProcessor.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:17:39 on Jun 01,2016
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/CES/330-Digital System Design/LabB" H:/CES/330-Digital System Design/LabB/testProcessor.v 
+# -- Compiling module testProcessor
+# 
+# Top level modules:
+# 	testProcessor
+# End time: 13:17:39 on Jun 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testProcessor
+# vsim -gui "+altera" -l msim_transcript -do "LabB_run_msim_rtl_verilog.do" 
+# Start time: 13:17:39 on Jun 01,2016
+# Loading work.testProcessor
+# Loading work.Processor
+# Loading work.ControlUnit
+# Loading work.InstROM
+# Loading altera_mf_ver.altsyncram
+# Loading work.StateMachine
+# Loading work.DataPath
+# Loading work.DataRAM
+# Loading work.RegRAM
+# Loading work.ALU74381
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: testProcessor.P2016.PDataPath.RegRAM_inst.altsyncram_component.m_default.altsyncram_inst
+# 
+# Begin Simulation.
+# Time is 0 : Reset = 1  State = 00  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 20000 : Reset = 0  State = 00  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 30000 : Reset = 0  State = 01  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 50000 : Reset = 0  State = 02  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 70000 : Reset = 0  State = 05  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 90000 : Reset = 0  State = 06  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 110000 : Reset = 0  State = 01  ALU A = cc05  ALU B = 0000 ALU Out = 0000
+# Time is 130000 : Reset = 0  State = 02  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 150000 : Reset = 0  State = 05  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 170000 : Reset = 0  State = 06  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 190000 : Reset = 0  State = 01  ALU A = 01b5  ALU B = 0000 ALU Out = 0000
+# Time is 210000 : Reset = 0  State = 02  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 230000 : Reset = 0  State = 09  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 250000 : Reset = 0  State = 0a  ALU A = cc05  ALU B = 01b5 ALU Out = ca50
+# Time is 270000 : Reset = 0  State = 01  ALU A = 0000  ALU B = ca50 ALU Out = 0000
+# Time is 290000 : Reset = 0  State = 02  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 310000 : Reset = 0  State = 05  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 330000 : Reset = 0  State = 06  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 350000 : Reset = 0  State = 01  ALU A = 10ac  ALU B = 0000 ALU Out = 0000
+# Time is 370000 : Reset = 0  State = 02  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 390000 : Reset = 0  State = 09  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 410000 : Reset = 0  State = 0a  ALU A = ca50  ALU B = 10ac ALU Out = dafc
+# Time is 430000 : Reset = 0  State = 01  ALU A = 0000  ALU B = dafc ALU Out = 0000
+# Time is 450000 : Reset = 0  State = 02  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 470000 : Reset = 0  State = 05  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 490000 : Reset = 0  State = 06  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 510000 : Reset = 0  State = 01  ALU A = a040  ALU B = 0000 ALU Out = 0000
+# Time is 530000 : Reset = 0  State = 02  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 550000 : Reset = 0  State = 09  ALU A = 0000  ALU B = 0000 ALU Out = 0000
+# Time is 570000 : Reset = 0  State = 0a  ALU A = dafc  ALU B = a040 ALU Out = 3abc
+# Time is 590000 : Reset = 0  State = 01  ALU A = 0000  ALU B = 3abc ALU Out = 0000
+# Time is 610000 : Reset = 0  State = 02  ALU A = 3abc  ALU B = 3abc ALU Out = 0000
+# Time is 630000 : Reset = 0  State = 07  ALU A = 3abc  ALU B = 3abc ALU Out = 0000
+# Time is 650000 : Reset = 0  State = 08  ALU A = 3abc  ALU B = 3abc ALU Out = 0000
+# Time is 670000 : Reset = 0  State = 01  ALU A = 3abc  ALU B = 3abc ALU Out = 0000
+# 
+# End of Simulation.
+# 
+# ** Note: $stop    : H:/CES/330-Digital System Design/LabB/testProcessor.v(34)
+#    Time: 690 ns  Iteration: 2  Instance: /testProcessor
+# Break in Module testProcessor at H:/CES/330-Digital System Design/LabB/testProcessor.v line 34
+# Simulation Breakpoint: Break in Module testProcessor at H:/CES/330-Digital System Design/LabB/testProcessor.v line 34
+# MACRO ./LabB_run_msim_rtl_verilog.do PAUSED at line 29
+# End time: 13:23:27 on Jun 01,2016, Elapsed time: 0:05:48
+# Errors: 0, Warnings: 0

@@ -1,0 +1,73 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Homework 3, Part 1
+//
+// TO DO
+
+module Part2 (KEY, SW, LEDG, LEDR);
+   input [0:0]KEY;                     // Key to activate clock
+   input [1:0]SW;                      // SW0 = synchronous reset, SW1 = w input
+   output [0:0] LEDG;
+   output [3:0] LEDR;
+   wire w, Reset;
+   
+   assign Reset = SW[0];
+   assign w = SW[1];
+   
+   reg [3:0] State, StateNext; // State represents current state, StateNext represents next state
+   localparam A = 4’b0000, B = 4’b0001, C = 4’b0010, D = 4’b0011, E =
+      4’b0100, F = 4’b0101, G = 4’b0110, H = 4’b0111, I = 4’b1000;
+      
+   always @(w, State)
+   begin: state_table
+      case (State)
+         A: if (!w) StateNext = B;
+         else StateNext = F;
+         B: if (!w) StateNext = C;
+         else StateNext = F;
+         C: if (!w) StateNext = D;
+         else StateNext = F;
+         D: if (!w) StateNext = E;
+         else StateNext = F;
+         E: if (!w) StateNext = E;
+         else StateNext = F;
+         F: if (!w) StateNext = B;
+         else StateNext = G;
+         G: if (!w) StateNext = B;
+         else StateNext = H;
+         H: if (!w) StateNext = B;
+         else StateNext = I;
+         I: if (!w) StateNext = B;
+         else StateNext = I;
+         default: StateNext = 4’bxxxx;
+      endcase
+   end // state_table
+   
+   always @(posedge Clock)
+   begin: state_FFs
+      if(Reset == 0)
+         State <= A;
+      else
+         State <= StateNext;
+   end // state_FFS
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

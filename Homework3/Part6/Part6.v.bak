@@ -1,0 +1,25 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 3, Part 6
+//
+// Module that uses KEY0 as the clock, SW2 as an input (w1), SW1 as an input (w0), and SW0 as 
+// a synchronous reset. The module will use an FSM to either increment by 1 if w1w0 = 01, 
+// increment by 2 if w1w0 = 10, decrement by 1 if w1w0 = 11, or stay the same if w1w0 = 00.
+
+module Part6 (KEY, CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7);
+   input [0:0] KEY;              // Synchronous reset
+   input CLOCK_50;
+   output [0:6] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7;
+   wire Reset;            // Wires used to make code cleaner
+   wire Shift;
+   wire [31:0] Q;
+   
+   assign Reset = KEY[0];        // Wires used to make code cleaner
+   
+   wire [3:0] State, StateNext;  // State represents current state, StateNext represents next state
+   
+   FSMHexHELLODisplay FSM0(CLOCK_50, Reset, Shift, State, StateNext);
+   
+   ShiftRegister S0(State, Shift, CLOCK_50, Q, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7);
+   
+endmodule

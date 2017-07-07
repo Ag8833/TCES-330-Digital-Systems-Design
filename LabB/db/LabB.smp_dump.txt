@@ -1,0 +1,20 @@
+
+State Machine - |LabB|Processor:pros|ControlUnit:PControlUnit|StateMachine:SM|InState
+Name InState.ArithB InState.ArithA InState.STOREB InState.STOREA InState.LOAD_B InState.LOAD_A InState.NOOP InState.Halt InState.Decode InState.Fetch InState.00000000 
+InState.00000000 0 0 0 0 0 0 0 0 0 0 0 
+InState.Fetch 0 0 0 0 0 0 0 0 0 1 1 
+InState.Decode 0 0 0 0 0 0 0 0 1 0 1 
+InState.Halt 0 0 0 0 0 0 0 1 0 0 1 
+InState.NOOP 0 0 0 0 0 0 1 0 0 0 1 
+InState.LOAD_A 0 0 0 0 0 1 0 0 0 0 1 
+InState.LOAD_B 0 0 0 0 1 0 0 0 0 0 1 
+InState.STOREA 0 0 0 1 0 0 0 0 0 0 1 
+InState.STOREB 0 0 1 0 0 0 0 0 0 0 1 
+InState.ArithA 0 1 0 0 0 0 0 0 0 0 1 
+InState.ArithB 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LabB|ButtonSync:BS|State
+Name State.S_A State.S_C State.S_B 
+State.S_A 0 0 0 
+State.S_B 1 0 1 
+State.S_C 1 1 0 

@@ -1,0 +1,13 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Extra Credit
+//
+// TO DO
+
+module Blink(SW, LEDR); 
+	input  [17:0] SW;                             // Toggle switches 
+	output [17:0] LEDR;                           // Red LEDs 
+   output [8:0] LEDG;
+   
+   assign LEDR = SW;                             // Displays the input switches   
+endmodule

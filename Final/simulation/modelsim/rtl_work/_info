@@ -1,0 +1,318 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ag883_000/Desktop/Quartus Workspace/Final/simulation/modelsim
+vALU74381
+Z1 !s110 1465410682
+!i10b 1
+!s100 Sf3R=o5`o5W4bY9Di=6F@3
+I0MPXE4QNAfm9YN3XfPA`<0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1464811188
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ALU74381.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/ALU74381.v
+L0 18
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1465410682.311000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ALU74381.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ALU74381.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final}
+n@a@l@u74381
+vButtonSync
+R1
+!i10b 1
+!s100 @XSNlVF2@I_@`@H:5WH^A1
+IQSBCol9M01[3;L2[LeQUc0
+R2
+R0
+w1464031700
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ButtonSync.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/ButtonSync.v
+Z6 L0 11
+R3
+r1
+!s85 0
+31
+!s108 1465410682.202000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ButtonSync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ButtonSync.v|
+!i113 1
+R4
+R5
+n@button@sync
+vControlUnit
+R1
+!i10b 1
+!s100 ?SknHUdEcGJ6bH26k[I^;3
+I^9`WL]QN?hY?aPm6CRCQH1
+R2
+R0
+w1465410019
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ControlUnit.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/ControlUnit.v
+R6
+R3
+r1
+!s85 0
+31
+!s108 1465410682.545000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ControlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/ControlUnit.v|
+!i113 1
+R4
+R5
+n@control@unit
+vDataPath
+R1
+!i10b 1
+!s100 nV7Q]WXUD;7WPZGA9RSCd1
+IXV@E79m9_:6k8_6bCzUbd1
+R2
+R0
+w1464818405
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/DataPath.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/DataPath.v
+Z7 L0 12
+R3
+r1
+!s85 0
+31
+!s108 1465410682.624000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/DataPath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/DataPath.v|
+!i113 1
+R4
+R5
+n@data@path
+vDataRAM
+R1
+!i10b 1
+!s100 M1K;Z:8V<^lla2NG5YKgc0
+I4@`j`Web=2XDZl2Z32i`63
+R2
+R0
+w1464202400
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/DataRAM.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/DataRAM.v
+Z8 L0 40
+R3
+r1
+!s85 0
+31
+!s108 1465410682.874000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/DataRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/DataRAM.v|
+!i113 1
+R4
+R5
+n@data@r@a@m
+vHex7seg
+Z9 !s110 1465410683
+!i10b 1
+!s100 7_;?d0_546fAhn>KZ9:W83
+ID>RZ@gD]WYBlLC7>=lZE30
+R2
+R0
+w1464205914
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Hex7seg.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/Hex7seg.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1465410683.577000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Hex7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Hex7seg.v|
+!i113 1
+R4
+R5
+n@hex7seg
+vInstROM
+R9
+!i10b 1
+!s100 H4FPQJblidCDG]zKbVWcn3
+IGB:UoNWAMjKcV?f66=L<50
+R2
+R0
+w1464208534
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/InstROM.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/InstROM.v
+R8
+R3
+r1
+!s85 0
+31
+!s108 1465410683.655000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/InstROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/InstROM.v|
+!i113 1
+R4
+R5
+n@inst@r@o@m
+vKeyFilter
+R1
+!i10b 1
+!s100 nAok3QE2C>EH=b]@@d`a>0
+IC4bb^`zJgLmOdY;NfeNU?3
+R2
+R0
+w1464214766
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/KeyFilter.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/KeyFilter.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1465410681.780000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/KeyFilter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/KeyFilter.v|
+!i113 1
+R4
+R5
+n@key@filter
+vLabB
+R1
+!i10b 1
+!s100 [WF_<Rh:7NAZNXN?Hc:YN3
+Ia?oRGlL`QlBmUSNoOW=`c3
+R2
+R0
+w1464818465
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/LabB.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/LabB.v
+R6
+R3
+r1
+!s85 0
+31
+!s108 1465410682.389000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/LabB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/LabB.v|
+!i113 1
+R4
+R5
+n@lab@b
+vMux8t1Nw
+R9
+!i10b 1
+!s100 8=QQbnJg[z3jc]XjOiUhB0
+INBn8N3:;Renc3=>H36iGJ1
+R2
+R0
+w1464215146
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Mux8t1Nw.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/Mux8t1Nw.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1465410683.452000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Mux8t1Nw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Mux8t1Nw.v|
+!i113 1
+R4
+R5
+n@mux8t1@nw
+vProcessor
+R1
+!i10b 1
+!s100 dZMo7>7]]@i9^cg[lzA]71
+I=e@jER0h43YXS5oQaFhHF0
+R2
+R0
+w1464815579
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Processor.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/Processor.v
+L0 10
+R3
+r1
+!s85 0
+31
+!s108 1465410682.795000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/Processor.v|
+!i113 1
+R4
+R5
+n@processor
+vRegRAM
+R1
+!i10b 1
+!s100 Ojile>_;SJ@0N>`[0Re`F3
+I7dN^`o8Y13g>Ozj8gXElH0
+R2
+R0
+w1464200184
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/RegRAM.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/RegRAM.v
+R8
+R3
+r1
+!s85 0
+31
+!s108 1465410682.717000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/RegRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/RegRAM.v|
+!i113 1
+R4
+R5
+n@reg@r@a@m
+vStateMachine
+R9
+!i10b 1
+!s100 A0:lPQJ;O:[H4ldn`gecW0
+I9YQE_=b83k;<C9MeZ<=??1
+R2
+R0
+w1465410644
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/StateMachine.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/StateMachine.v
+R7
+R3
+r1
+!s85 0
+31
+!s108 1465410682.967000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/StateMachine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/StateMachine.v|
+!i113 1
+R4
+R5
+n@state@machine
+vtestProcessor
+R9
+!i10b 1
+!s100 5[af;VH:Bnb5Zk9A8EH4a2
+I];oZoakWzXR0M>oYH4j?T0
+R2
+R0
+w1464031694
+8C:/Users/ag883_000/Desktop/Quartus Workspace/Final/testProcessor.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/Final/testProcessor.v
+L0 7
+R3
+r1
+!s85 0
+31
+!s108 1465410683.733000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/Final/testProcessor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ag883_000/Desktop/Quartus Workspace/Final|C:/Users/ag883_000/Desktop/Quartus Workspace/Final/testProcessor.v|
+!i113 1
+R4
+R5
+ntest@processor

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Part5
-Tue Apr 19 16:33:18 2016
+Wed Apr 20 21:44:06 2016
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -3942,7 +3942,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Tue Apr 19 16:33:16 2016
+    Info: Processing started: Wed Apr 20 21:44:03 2016
 Info: Command: quartus_sta Part5 -c Part5
 Info: qsta_default_script.tcl version: #11
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -3989,9 +3989,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 783 megabytes
-    Info: Processing ended: Tue Apr 19 16:33:18 2016
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 784 megabytes
+    Info: Processing ended: Wed Apr 20 21:44:06 2016
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

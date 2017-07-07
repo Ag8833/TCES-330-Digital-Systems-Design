@@ -1,0 +1,216 @@
+|Part3
+KEY[0] => KEY[0].IN1
+SW[0] => NotEnable.IN1
+SW[1] => Clear.IN1
+HEX3[6] <= Hex7seg:H3.port1
+HEX3[5] <= Hex7seg:H3.port1
+HEX3[4] <= Hex7seg:H3.port1
+HEX3[3] <= Hex7seg:H3.port1
+HEX3[2] <= Hex7seg:H3.port1
+HEX3[1] <= Hex7seg:H3.port1
+HEX3[0] <= Hex7seg:H3.port1
+HEX2[6] <= Hex7seg:H2.port1
+HEX2[5] <= Hex7seg:H2.port1
+HEX2[4] <= Hex7seg:H2.port1
+HEX2[3] <= Hex7seg:H2.port1
+HEX2[2] <= Hex7seg:H2.port1
+HEX2[1] <= Hex7seg:H2.port1
+HEX2[0] <= Hex7seg:H2.port1
+HEX1[6] <= Hex7seg:H1.port1
+HEX1[5] <= Hex7seg:H1.port1
+HEX1[4] <= Hex7seg:H1.port1
+HEX1[3] <= Hex7seg:H1.port1
+HEX1[2] <= Hex7seg:H1.port1
+HEX1[1] <= Hex7seg:H1.port1
+HEX1[0] <= Hex7seg:H1.port1
+HEX0[6] <= Hex7seg:H0.port1
+HEX0[5] <= Hex7seg:H0.port1
+HEX0[4] <= Hex7seg:H0.port1
+HEX0[3] <= Hex7seg:H0.port1
+HEX0[2] <= Hex7seg:H0.port1
+HEX0[1] <= Hex7seg:H0.port1
+HEX0[0] <= Hex7seg:H0.port1
+
+
+|Part3|LPMCount:LPMCount_inst
+clock => clock.IN1
+cnt_en => cnt_en.IN1
+sclr => sclr.IN1
+q[0] <= lpm_counter:LPM_COUNTER_component.q
+q[1] <= lpm_counter:LPM_COUNTER_component.q
+q[2] <= lpm_counter:LPM_COUNTER_component.q
+q[3] <= lpm_counter:LPM_COUNTER_component.q
+q[4] <= lpm_counter:LPM_COUNTER_component.q
+q[5] <= lpm_counter:LPM_COUNTER_component.q
+q[6] <= lpm_counter:LPM_COUNTER_component.q
+q[7] <= lpm_counter:LPM_COUNTER_component.q
+q[8] <= lpm_counter:LPM_COUNTER_component.q
+q[9] <= lpm_counter:LPM_COUNTER_component.q
+q[10] <= lpm_counter:LPM_COUNTER_component.q
+q[11] <= lpm_counter:LPM_COUNTER_component.q
+q[12] <= lpm_counter:LPM_COUNTER_component.q
+q[13] <= lpm_counter:LPM_COUNTER_component.q
+q[14] <= lpm_counter:LPM_COUNTER_component.q
+q[15] <= lpm_counter:LPM_COUNTER_component.q
+
+
+|Part3|LPMCount:LPMCount_inst|lpm_counter:LPM_COUNTER_component
+clock => cntr_8ui:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_8ui:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_8ui:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => ~NO_FANOUT~
+data[6] => ~NO_FANOUT~
+data[7] => ~NO_FANOUT~
+data[8] => ~NO_FANOUT~
+data[9] => ~NO_FANOUT~
+data[10] => ~NO_FANOUT~
+data[11] => ~NO_FANOUT~
+data[12] => ~NO_FANOUT~
+data[13] => ~NO_FANOUT~
+data[14] => ~NO_FANOUT~
+data[15] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_8ui:auto_generated.q[0]
+q[1] <= cntr_8ui:auto_generated.q[1]
+q[2] <= cntr_8ui:auto_generated.q[2]
+q[3] <= cntr_8ui:auto_generated.q[3]
+q[4] <= cntr_8ui:auto_generated.q[4]
+q[5] <= cntr_8ui:auto_generated.q[5]
+q[6] <= cntr_8ui:auto_generated.q[6]
+q[7] <= cntr_8ui:auto_generated.q[7]
+q[8] <= cntr_8ui:auto_generated.q[8]
+q[9] <= cntr_8ui:auto_generated.q[9]
+q[10] <= cntr_8ui:auto_generated.q[10]
+q[11] <= cntr_8ui:auto_generated.q[11]
+q[12] <= cntr_8ui:auto_generated.q[12]
+q[13] <= cntr_8ui:auto_generated.q[13]
+q[14] <= cntr_8ui:auto_generated.q[14]
+q[15] <= cntr_8ui:auto_generated.q[15]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|Part3|LPMCount:LPMCount_inst|lpm_counter:LPM_COUNTER_component|cntr_8ui:auto_generated
+clock => counter_reg_bit[15].CLK
+clock => counter_reg_bit[14].CLK
+clock => counter_reg_bit[13].CLK
+clock => counter_reg_bit[12].CLK
+clock => counter_reg_bit[11].CLK
+clock => counter_reg_bit[10].CLK
+clock => counter_reg_bit[9].CLK
+clock => counter_reg_bit[8].CLK
+clock => counter_reg_bit[7].CLK
+clock => counter_reg_bit[6].CLK
+clock => counter_reg_bit[5].CLK
+clock => counter_reg_bit[4].CLK
+clock => counter_reg_bit[3].CLK
+clock => counter_reg_bit[2].CLK
+clock => counter_reg_bit[1].CLK
+clock => counter_reg_bit[0].CLK
+cnt_en => _.IN1
+q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= counter_reg_bit[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= counter_reg_bit[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= counter_reg_bit[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= counter_reg_bit[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= counter_reg_bit[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= counter_reg_bit[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= counter_reg_bit[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= counter_reg_bit[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= counter_reg_bit[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= counter_reg_bit[13].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= counter_reg_bit[14].DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= counter_reg_bit[15].DB_MAX_OUTPUT_PORT_TYPE
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|Part3|Hex7seg:H3
+I[0] => Decoder0.IN3
+I[1] => Decoder0.IN2
+I[2] => Decoder0.IN1
+I[3] => Decoder0.IN0
+Hex[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|Hex7seg:H2
+I[0] => Decoder0.IN3
+I[1] => Decoder0.IN2
+I[2] => Decoder0.IN1
+I[3] => Decoder0.IN0
+Hex[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|Hex7seg:H1
+I[0] => Decoder0.IN3
+I[1] => Decoder0.IN2
+I[2] => Decoder0.IN1
+I[3] => Decoder0.IN0
+Hex[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|Hex7seg:H0
+I[0] => Decoder0.IN3
+I[1] => Decoder0.IN2
+I[2] => Decoder0.IN1
+I[3] => Decoder0.IN0
+Hex[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

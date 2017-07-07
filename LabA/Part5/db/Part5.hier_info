@@ -1,0 +1,2263 @@
+|Part5
+SW[0] => O[0].IN8
+SW[1] => O[1].IN8
+SW[2] => O[2].IN8
+SW[3] => L[0].IN16
+SW[4] => L[1].IN16
+SW[5] => L[2].IN16
+SW[6] => E[0].IN8
+SW[7] => E[1].IN8
+SW[8] => E[2].IN8
+SW[9] => H[0].IN8
+SW[10] => H[1].IN8
+SW[11] => H[2].IN8
+SW[12] => BLANK[0].IN24
+SW[13] => BLANK[1].IN24
+SW[14] => BLANK[2].IN24
+LEDR[0] <= O[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= O[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= O[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= L[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= L[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= L[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= E[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= E[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= E[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= H[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[10] <= H[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[11] <= H[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[12] <= BLANK[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[13] <= BLANK[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[14] <= BLANK[2].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HexHELO:H0.port1
+HEX0[5] <= HexHELO:H0.port1
+HEX0[4] <= HexHELO:H0.port1
+HEX0[3] <= HexHELO:H0.port1
+HEX0[2] <= HexHELO:H0.port1
+HEX0[1] <= HexHELO:H0.port1
+HEX0[0] <= HexHELO:H0.port1
+HEX1[6] <= HexHELO:H1.port1
+HEX1[5] <= HexHELO:H1.port1
+HEX1[4] <= HexHELO:H1.port1
+HEX1[3] <= HexHELO:H1.port1
+HEX1[2] <= HexHELO:H1.port1
+HEX1[1] <= HexHELO:H1.port1
+HEX1[0] <= HexHELO:H1.port1
+HEX2[6] <= HexHELO:H2.port1
+HEX2[5] <= HexHELO:H2.port1
+HEX2[4] <= HexHELO:H2.port1
+HEX2[3] <= HexHELO:H2.port1
+HEX2[2] <= HexHELO:H2.port1
+HEX2[1] <= HexHELO:H2.port1
+HEX2[0] <= HexHELO:H2.port1
+HEX3[6] <= HexHELO:H3.port1
+HEX3[5] <= HexHELO:H3.port1
+HEX3[4] <= HexHELO:H3.port1
+HEX3[3] <= HexHELO:H3.port1
+HEX3[2] <= HexHELO:H3.port1
+HEX3[1] <= HexHELO:H3.port1
+HEX3[0] <= HexHELO:H3.port1
+HEX4[6] <= HexHELO:H4.port1
+HEX4[5] <= HexHELO:H4.port1
+HEX4[4] <= HexHELO:H4.port1
+HEX4[3] <= HexHELO:H4.port1
+HEX4[2] <= HexHELO:H4.port1
+HEX4[1] <= HexHELO:H4.port1
+HEX4[0] <= HexHELO:H4.port1
+HEX5[6] <= HexHELO:H5.port1
+HEX5[5] <= HexHELO:H5.port1
+HEX5[4] <= HexHELO:H5.port1
+HEX5[3] <= HexHELO:H5.port1
+HEX5[2] <= HexHELO:H5.port1
+HEX5[1] <= HexHELO:H5.port1
+HEX5[0] <= HexHELO:H5.port1
+HEX6[6] <= HexHELO:H6.port1
+HEX6[5] <= HexHELO:H6.port1
+HEX6[4] <= HexHELO:H6.port1
+HEX6[3] <= HexHELO:H6.port1
+HEX6[2] <= HexHELO:H6.port1
+HEX6[1] <= HexHELO:H6.port1
+HEX6[0] <= HexHELO:H6.port1
+HEX7[6] <= HexHELO:H7.port1
+HEX7[5] <= HexHELO:H7.port1
+HEX7[4] <= HexHELO:H7.port1
+HEX7[3] <= HexHELO:H7.port1
+HEX7[2] <= HexHELO:H7.port1
+HEX7[1] <= HexHELO:H7.port1
+HEX7[0] <= HexHELO:H7.port1
+CLOCK_50 => _.IN1
+
+
+|Part5|CountNG:U1
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => ClockCount[0]~reg0.CLK
+Clock => ClockCount[1]~reg0.CLK
+Clock => ClockCount[2]~reg0.CLK
+Clock => ClockCount[3]~reg0.CLK
+Clock => ClockCount[4]~reg0.CLK
+Clock => ClockCount[5]~reg0.CLK
+Clock => ClockCount[6]~reg0.CLK
+Clock => ClockCount[7]~reg0.CLK
+Clock => ClockCount[8]~reg0.CLK
+Clock => ClockCount[9]~reg0.CLK
+Clock => ClockCount[10]~reg0.CLK
+Clock => ClockCount[11]~reg0.CLK
+Clock => ClockCount[12]~reg0.CLK
+Clock => ClockCount[13]~reg0.CLK
+Clock => ClockCount[14]~reg0.CLK
+Clock => ClockCount[15]~reg0.CLK
+Clock => ClockCount[16]~reg0.CLK
+Clock => ClockCount[17]~reg0.CLK
+Clock => ClockCount[18]~reg0.CLK
+Clock => ClockCount[19]~reg0.CLK
+Clock => ClockCount[20]~reg0.CLK
+Clock => ClockCount[21]~reg0.CLK
+Clock => ClockCount[22]~reg0.CLK
+Clock => ClockCount[23]~reg0.CLK
+Clock => ClockCount[24]~reg0.CLK
+Clock => ClockCount[25]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[0] <= ClockCount[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[1] <= ClockCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[2] <= ClockCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[3] <= ClockCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[4] <= ClockCount[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[5] <= ClockCount[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[6] <= ClockCount[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[7] <= ClockCount[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[8] <= ClockCount[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[9] <= ClockCount[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[10] <= ClockCount[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[11] <= ClockCount[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[12] <= ClockCount[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[13] <= ClockCount[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[14] <= ClockCount[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[15] <= ClockCount[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[16] <= ClockCount[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[17] <= ClockCount[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[18] <= ClockCount[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[19] <= ClockCount[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[20] <= ClockCount[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[21] <= ClockCount[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[22] <= ClockCount[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[23] <= ClockCount[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[24] <= ClockCount[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[25] <= ClockCount[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1
+R[0] => R[0].IN1
+R[1] => R[1].IN1
+R[2] => R[2].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+T[0] => T[0].IN1
+T[1] => T[1].IN1
+T[2] => T[2].IN1
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+SELECT[0] => SELECT[0].IN3
+SELECT[1] => SELECT[1].IN3
+SELECT[2] => SELECT[2].IN3
+M[0] <= Mux8_1:Mux0.port9
+M[1] <= Mux8_1:Mux1.port9
+M[2] <= Mux8_1:Mux2.port9
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux0
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux0|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux0|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux0|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux1
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux1|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux1|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux1|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux2
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux2|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux2|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu1|Mux8_1:Mux2|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2
+R[0] => R[0].IN1
+R[1] => R[1].IN1
+R[2] => R[2].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+T[0] => T[0].IN1
+T[1] => T[1].IN1
+T[2] => T[2].IN1
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+SELECT[0] => SELECT[0].IN3
+SELECT[1] => SELECT[1].IN3
+SELECT[2] => SELECT[2].IN3
+M[0] <= Mux8_1:Mux0.port9
+M[1] <= Mux8_1:Mux1.port9
+M[2] <= Mux8_1:Mux2.port9
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux0
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux0|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux0|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux0|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux1
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux1|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux1|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux1|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux2
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux2|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux2|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu2|Mux8_1:Mux2|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3
+R[0] => R[0].IN1
+R[1] => R[1].IN1
+R[2] => R[2].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+T[0] => T[0].IN1
+T[1] => T[1].IN1
+T[2] => T[2].IN1
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+SELECT[0] => SELECT[0].IN3
+SELECT[1] => SELECT[1].IN3
+SELECT[2] => SELECT[2].IN3
+M[0] <= Mux8_1:Mux0.port9
+M[1] <= Mux8_1:Mux1.port9
+M[2] <= Mux8_1:Mux2.port9
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux0
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux0|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux0|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux0|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux1
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux1|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux1|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux1|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux2
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux2|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux2|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu3|Mux8_1:Mux2|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4
+R[0] => R[0].IN1
+R[1] => R[1].IN1
+R[2] => R[2].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+T[0] => T[0].IN1
+T[1] => T[1].IN1
+T[2] => T[2].IN1
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+SELECT[0] => SELECT[0].IN3
+SELECT[1] => SELECT[1].IN3
+SELECT[2] => SELECT[2].IN3
+M[0] <= Mux8_1:Mux0.port9
+M[1] <= Mux8_1:Mux1.port9
+M[2] <= Mux8_1:Mux2.port9
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux0
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux0|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux0|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux0|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux1
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux1|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux1|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux1|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux2
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux2|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux2|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu4|Mux8_1:Mux2|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5
+R[0] => R[0].IN1
+R[1] => R[1].IN1
+R[2] => R[2].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+T[0] => T[0].IN1
+T[1] => T[1].IN1
+T[2] => T[2].IN1
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+SELECT[0] => SELECT[0].IN3
+SELECT[1] => SELECT[1].IN3
+SELECT[2] => SELECT[2].IN3
+M[0] <= Mux8_1:Mux0.port9
+M[1] <= Mux8_1:Mux1.port9
+M[2] <= Mux8_1:Mux2.port9
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux0
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux0|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux0|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux0|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux1
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux1|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux1|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux1|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux2
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux2|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux2|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu5|Mux8_1:Mux2|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6
+R[0] => R[0].IN1
+R[1] => R[1].IN1
+R[2] => R[2].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+T[0] => T[0].IN1
+T[1] => T[1].IN1
+T[2] => T[2].IN1
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+SELECT[0] => SELECT[0].IN3
+SELECT[1] => SELECT[1].IN3
+SELECT[2] => SELECT[2].IN3
+M[0] <= Mux8_1:Mux0.port9
+M[1] <= Mux8_1:Mux1.port9
+M[2] <= Mux8_1:Mux2.port9
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux0
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux0|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux0|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux0|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux1
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux1|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux1|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux1|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux2
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux2|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux2|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu6|Mux8_1:Mux2|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7
+R[0] => R[0].IN1
+R[1] => R[1].IN1
+R[2] => R[2].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+T[0] => T[0].IN1
+T[1] => T[1].IN1
+T[2] => T[2].IN1
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+SELECT[0] => SELECT[0].IN3
+SELECT[1] => SELECT[1].IN3
+SELECT[2] => SELECT[2].IN3
+M[0] <= Mux8_1:Mux0.port9
+M[1] <= Mux8_1:Mux1.port9
+M[2] <= Mux8_1:Mux2.port9
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux0
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux0|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux0|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux0|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux1
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux1|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux1|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux1|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux2
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux2|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux2|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu7|Mux8_1:Mux2|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8
+R[0] => R[0].IN1
+R[1] => R[1].IN1
+R[2] => R[2].IN1
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+S[2] => S[2].IN1
+T[0] => T[0].IN1
+T[1] => T[1].IN1
+T[2] => T[2].IN1
+U[0] => U[0].IN1
+U[1] => U[1].IN1
+U[2] => U[2].IN1
+V[0] => V[0].IN1
+V[1] => V[1].IN1
+V[2] => V[2].IN1
+W[0] => W[0].IN1
+W[1] => W[1].IN1
+W[2] => W[2].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+SELECT[0] => SELECT[0].IN3
+SELECT[1] => SELECT[1].IN3
+SELECT[2] => SELECT[2].IN3
+M[0] <= Mux8_1:Mux0.port9
+M[1] <= Mux8_1:Mux1.port9
+M[2] <= Mux8_1:Mux2.port9
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux0
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux0|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux0|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux0|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux0|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux0|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux0|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux0|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux1
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux1|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux1|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux1|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux1|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux1|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux1|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux1|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux2
+R => R.IN1
+S => S.IN1
+T => T.IN1
+U => U.IN1
+V => V.IN1
+W => W.IN1
+X => X.IN1
+Y => Y.IN1
+SELECT[0] => SELECT[0].IN4
+SELECT[1] => SELECT[1].IN2
+SELECT[2] => SELECT[2].IN1
+M <= Mux2_1:Mux6.port3
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux2|Mux2_1:Mux0
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux2|Mux2_1:Mux1
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux2|Mux2_1:Mux2
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux2|Mux2_1:Mux3
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux2|Mux2_1:Mux4
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux2|Mux2_1:Mux5
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|Mux3w_8to1:Mu8|Mux8_1:Mux2|Mux2_1:Mux6
+X => F.IN0
+Y => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|HexHELO:H0
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[1] => HEX.IN0
+C[1] => HEX.IN0
+C[2] => HEX.IN1
+C[2] => HEX.IN1
+HEX[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|HexHELO:H1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[1] => HEX.IN0
+C[1] => HEX.IN0
+C[2] => HEX.IN1
+C[2] => HEX.IN1
+HEX[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|HexHELO:H2
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[1] => HEX.IN0
+C[1] => HEX.IN0
+C[2] => HEX.IN1
+C[2] => HEX.IN1
+HEX[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|HexHELO:H3
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[1] => HEX.IN0
+C[1] => HEX.IN0
+C[2] => HEX.IN1
+C[2] => HEX.IN1
+HEX[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|HexHELO:H4
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[1] => HEX.IN0
+C[1] => HEX.IN0
+C[2] => HEX.IN1
+C[2] => HEX.IN1
+HEX[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|HexHELO:H5
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[1] => HEX.IN0
+C[1] => HEX.IN0
+C[2] => HEX.IN1
+C[2] => HEX.IN1
+HEX[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|HexHELO:H6
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[1] => HEX.IN0
+C[1] => HEX.IN0
+C[2] => HEX.IN1
+C[2] => HEX.IN1
+HEX[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part5|HexHELO:H7
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[0] => HEX.IN1
+C[1] => HEX.IN0
+C[1] => HEX.IN0
+C[2] => HEX.IN1
+C[2] => HEX.IN1
+HEX[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+

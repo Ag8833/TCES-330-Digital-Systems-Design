@@ -1,0 +1,164 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/simulation/modelsim
+vAddressGen
+Z1 !s110 1463559881
+!i10b 1
+!s100 LN;Jbef_Qi47zYa^[BMMU3
+Id@Ld2Ai4J6I2QdVY`4YQb2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z3 w1463559505
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/AddressGen.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/AddressGen.v
+L0 7
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1463559880.997000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/AddressGen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1|C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/AddressGen.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1}
+n@address@gen
+vHex7seg
+R1
+!i10b 1
+!s100 7_;?d0_546fAhn>KZ9:W83
+IbRA^QfZ;a;SNM2kRDbbKn0
+R2
+R0
+w1463547049
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Hex7seg.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Hex7seg.v
+L0 8
+R4
+r1
+!s85 0
+31
+!s108 1463559881.212000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Hex7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1|C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Hex7seg.v|
+!i113 1
+R5
+R6
+n@hex7seg
+vPart1
+Z7 !s110 1463559880
+!i10b 1
+!s100 C`YSbJekO]<Hg@e30LdPf0
+IeEf0S7<41=V?KTzREmz8R2
+R2
+R0
+w1463559431
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Part1.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Part1.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1463559880.893000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Part1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1|C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Part1.v|
+!i113 1
+R5
+R6
+n@part1
+vPart1ROM
+R1
+!i10b 1
+!s100 1_S^hPDP85iL?7j7UgPZ=0
+I_>=hc8b02h7NVI:[]aoE`0
+R2
+R0
+w1463546817
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Part1ROM.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Part1ROM.v
+L0 40
+R4
+r1
+!s85 0
+31
+!s108 1463559881.157000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Part1ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1|C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Part1ROM.v|
+!i113 1
+R5
+R6
+n@part1@r@o@m
+vSystemControl
+R7
+!i10b 1
+!s100 ZEnDRO1Q<PNXh5U3:d8B81
+IaD;KnHM=E0DkkEW<:m<]d2
+R2
+R0
+R3
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/SystemControl.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/SystemControl.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1463559880.945000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/SystemControl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1|C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/SystemControl.v|
+!i113 1
+R5
+R6
+n@system@control
+vTestSystemControl
+R1
+!i10b 1
+!s100 zKK`n1[OMkCMF6^CRTY370
+IEJ[9P2Z=N77YCF=gXoY[T3
+R2
+R0
+w1463558938
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/TestSystemControl.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/TestSystemControl.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1463559881.263000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/TestSystemControl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1|C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/TestSystemControl.v|
+!i113 1
+R5
+R6
+n@test@system@control
+vTimer
+R1
+!i10b 1
+!s100 LXDZa8ITHbQfhAELc3P]F2
+IGQLUhK8V`AO1oeTgl`BP<2
+R2
+R0
+w1463559809
+8C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Timer.v
+FC:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Timer.v
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1463559881.108000
+!s107 C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1|C:/Users/Andrew/Desktop/Quartus Workspace/Homework5/Part1/Timer.v|
+!i113 1
+R5
+R6
+n@timer

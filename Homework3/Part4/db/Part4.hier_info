@@ -1,0 +1,52 @@
+|Part4
+KEY[0] => Clock.IN1
+SW[0] => Reset.IN1
+SW[1] => w0.IN1
+SW[2] => w1.IN1
+HEX0[6] << HexDisplay:H0.port1
+HEX0[5] << HexDisplay:H0.port1
+HEX0[4] << HexDisplay:H0.port1
+HEX0[3] << HexDisplay:H0.port1
+HEX0[2] << HexDisplay:H0.port1
+HEX0[1] << HexDisplay:H0.port1
+HEX0[0] << HexDisplay:H0.port1
+
+
+|Part4|FSMUpOrDownCounter:FSM0
+Clock => State~1.DATAIN
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+Reset => State.OUTPUTSELECT
+w1 => always0.IN0
+w1 => always0.IN0
+w1 => always0.IN0
+w0 => always0.IN1
+w0 => always0.IN1
+w0 => always0.IN1
+CurrentState[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+CurrentState[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+CurrentState[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+CurrentState[3] <= CurrentState.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part4|HexDisplay:H0
+C[0] => Decoder0.IN3
+C[1] => Decoder0.IN2
+C[2] => Decoder0.IN1
+C[3] => Decoder0.IN0
+HEX[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

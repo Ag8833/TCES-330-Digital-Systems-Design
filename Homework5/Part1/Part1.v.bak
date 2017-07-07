@@ -1,0 +1,7 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 5, Part 1
+//
+// TO DO
+
+module Part1(GPIO, KEY, SW, CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7);

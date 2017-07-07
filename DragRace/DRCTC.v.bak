@@ -1,0 +1,106 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 4
+//
+// TO DO
+
+module DRCTC(Clock, Reset, PSB, SB, PSL, SL, A1, A2, A3, GRN, RED);
+   input Clock, Reset, PSB, SB;
+   reg [3:0] State, StateNext;   // State represents current state, StateNext represents next state
+   reg [25:0] ClockCount = 26'b0;       // Checks to see if the Clock has had 50,000,000 ticks
+   output PSL, SL;
+   output reg A1, A2, A3, GRN, RED;
+
+   assign PSL = PSB;
+   assign SL = SB;
+   
+   // Binary values representing states A - I
+   localparam SIDLE = 3'b000, SSTAGE = 3'b001, SA1 = 3'b010, 
+      SA2 = 3'b011, SA3 = 3'b100, SGRN = 3'b101, SRED = 3'b110;
+   
+   // State Table (Combinational Logic)   
+   always @(State, SB)
+   begin: state_table
+      A1 = 1'b0;
+      A2 = 1'b0;
+      A3 = 1'b0;
+      GRN = 1'b0;
+      RED = 1'b0;
+      case (State)
+         SIDLE: begin
+                if(SB) StateNext = SSTAGE;
+                else StateNext = SIDLE;
+         end
+         SSTAGE: begin
+                 if(!SB) StateNext = SIDLE;
+                 else StateNext = SA1;
+         end     
+         SA1: begin
+              A1 = 1'b1;
+              if(!SB) StateNext = SRED;
+              else StateNext = SA2;
+         end
+         SA2: begin
+              A1 = 1'b0;
+              A2 = 1'b1;
+              if(!SB) StateNext = SRED;
+              else StateNext = SA3;  
+         end
+         SA3: begin
+              A2 = 1'b0;
+              A3 = 1'b1;
+              if(!SB) StateNext = SRED;
+              else StateNext = SGRN;
+         end
+         SGRN: begin
+               A3 = 1'b0;
+               GRN = 1'b1;
+               StateNext = SGRN;
+         end
+         SRED: begin
+               A1 = 1'b0;
+               A2 = 1'b0;
+               A3 = 1'b0;
+               GRN = 1'b0;
+               RED = 1'b1;
+               StateNext = SRED;
+         end
+         default: StateNext = 4'b0000;
+      endcase
+   end
+   
+   // State FFS (State Register)
+   always @(posedge Clock)
+   begin: state_FFs
+      if(Reset == 1)begin
+         State <= SIDLE;       // If reset is 0 keep state at IDLE
+      end
+      else begin
+         if(State == SSTAGE)begin
+            ClockCount <= ClockCount + 26'b1;
+            if(!SB)begin
+               State <= StateNext;
+               ClockCount <= 26'b0;
+            end
+            else if(ClockCount == 26'd50_000_000)begin
+               State <= StateNext;
+               ClockCount <= 26'b0;
+               end
+         end
+         else if(State == SA1 || State == SA2 || State == SA3)begin
+            ClockCount <= ClockCount + 26'b1;
+            if(!SB)begin
+               State <= StateNext;
+               ClockCount <= 26'b0;
+            end
+            if(ClockCount == 26'd25_000_000)begin
+               State <= StateNext;
+               ClockCount <= 26'b0;
+               end
+         end
+         else State <= StateNext;  // Else progress the state
+      end
+   end
+   
+
+endmodule

@@ -1,0 +1,15 @@
+/*
+Andrew Gates, Brandon Watt, and Vladislav Psarev
+5/23/16
+LabB
+ControlUnit:
+
+*/
+
+module ControlUnit();
+
+// Inst Memory
+// ProgramCounter
+// InstructionRegister
+
+endmodule 

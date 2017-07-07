@@ -1,0 +1,14 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Midterm 1
+//
+// Module that connects the SW switches to the LEDR lights, and connects the HEX0 - HEX1 outputs 
+// to the corresponding seven-segment displays. It calls the HexDisplay module 2 times and displays
+// the BCD value of the binary number that each set of switches corresponds to.
+
+module Part7(SW, LEDR); 
+	input  [17:0] SW;                             // Toggle switches 
+	output [17:0] LEDR;                           // Red LEDs 
+   
+   assign LEDR = SW;                             // Displays the input switches   
+endmodule

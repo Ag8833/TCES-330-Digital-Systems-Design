@@ -1,0 +1,12 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Midterm 1
+//
+// Module that connects the SW switches to the LEDR lights.
+
+module PWM (Clock, Duty, Y); 
+	input  Clock;        // The system clock
+   input [7:0] Duty;    // The switch settings
+   output Y;            // The signal that controls the LEDs
+   
+endmodule   

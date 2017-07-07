@@ -1,0 +1,18 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 3, Part 5
+//
+// TO DO
+
+module ShiftRegister(DataIn, Shift, Clk, Q); 
+   input DataIn;        // shift IN data 
+   input Shift;         // shift signal 
+   input Clk;           // our clock 
+   output [3:0] Q;      // most significant register
+   
+   // module Register(Data, Enable, Clk, Q); 
+   Register R0(DataIn, Shift, Clk, Q[0]); 
+   Register R1(Q[0], Shift, Clk, Q[1]); 
+   Register R2(Q[1], Shift, Clk, Q[2]); 
+   Register R3(Q[2], Shift, Clk, Q[3]);
+endmodule

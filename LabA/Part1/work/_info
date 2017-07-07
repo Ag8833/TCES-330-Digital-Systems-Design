@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dH:/CES/330-Digital System Design/LabA/Part1
+vCountNG
+!s110 1461612884
+!i10b 1
+!s100 9KBKW8Kj`9MgQdDdJ<mCm1
+I@z7QUaf<MP>KB0oH@9F<@2
+Z0 V`JN@9S9cnhjKRR_L]QIcM3
+Z1 dC:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1
+Z2 w1461346410
+8C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/CountNG.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/CountNG.v
+L0 11
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1461612883.943000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/CountNG.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/CountNG.v|
+!i113 1
+Z4 o-work work
+n@count@n@g
+vHex7seg
+!s110 1461612885
+!i10b 1
+!s100 ?4z864A34oCk14n<B4acP3
+IAQcj4CSSQHnCTh4h<`=go3
+R0
+R1
+w1461347056
+8C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/Hex7seg.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/Hex7seg.v
+L0 7
+R3
+r1
+!s85 0
+31
+!s108 1461612885.444000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/Hex7seg.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/Hex7seg.v|
+!i113 1
+R4
+n@hex7seg
+vtest_CountNG
+!s110 1461794350
+!i10b 1
+!s100 C57L@^2nIbNQ81n_0RTVV0
+IJcf1^Te8V1oR^NIgd@LT=3
+R0
+R1
+w1461794241
+8C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/test_CountNG_outline.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/test_CountNG_outline.v
+L0 10
+R3
+r1
+!s85 0
+31
+!s108 1461794350.277000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/test_CountNG_outline.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/test_CountNG_outline.v|
+!i113 1
+R4
+ntest_@count@n@g
+vTFFx
+!s110 1461612881
+!i10b 1
+!s100 zJmJCD7TNJFQ=3XlZe5`O0
+I^0=4mmBkGRQb[:f:bfiS`2
+R0
+R1
+R2
+8C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/TFFx.v
+FC:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/TFFx.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1461612881.179000
+!s107 C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/TFFx.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ag883_000/Desktop/Quartus Workspace/LabA/Part1/TFFx.v|
+!i113 1
+R4
+n@t@f@fx

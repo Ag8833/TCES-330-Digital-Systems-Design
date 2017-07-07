@@ -1,0 +1,88 @@
+|Part4
+HEX0[6] << Hex7seg:H3.port1
+HEX0[5] << Hex7seg:H3.port1
+HEX0[4] << Hex7seg:H3.port1
+HEX0[3] << Hex7seg:H3.port1
+HEX0[2] << Hex7seg:H3.port1
+HEX0[1] << Hex7seg:H3.port1
+HEX0[0] << Hex7seg:H3.port1
+CLOCK_50 => _.IN1
+
+
+|Part4|CountNG:U1
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Clock => ClockCount[0]~reg0.CLK
+Clock => ClockCount[1]~reg0.CLK
+Clock => ClockCount[2]~reg0.CLK
+Clock => ClockCount[3]~reg0.CLK
+Clock => ClockCount[4]~reg0.CLK
+Clock => ClockCount[5]~reg0.CLK
+Clock => ClockCount[6]~reg0.CLK
+Clock => ClockCount[7]~reg0.CLK
+Clock => ClockCount[8]~reg0.CLK
+Clock => ClockCount[9]~reg0.CLK
+Clock => ClockCount[10]~reg0.CLK
+Clock => ClockCount[11]~reg0.CLK
+Clock => ClockCount[12]~reg0.CLK
+Clock => ClockCount[13]~reg0.CLK
+Clock => ClockCount[14]~reg0.CLK
+Clock => ClockCount[15]~reg0.CLK
+Clock => ClockCount[16]~reg0.CLK
+Clock => ClockCount[17]~reg0.CLK
+Clock => ClockCount[18]~reg0.CLK
+Clock => ClockCount[19]~reg0.CLK
+Clock => ClockCount[20]~reg0.CLK
+Clock => ClockCount[21]~reg0.CLK
+Clock => ClockCount[22]~reg0.CLK
+Clock => ClockCount[23]~reg0.CLK
+Clock => ClockCount[24]~reg0.CLK
+Clock => ClockCount[25]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[0] <= ClockCount[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[1] <= ClockCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[2] <= ClockCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[3] <= ClockCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[4] <= ClockCount[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[5] <= ClockCount[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[6] <= ClockCount[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[7] <= ClockCount[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[8] <= ClockCount[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[9] <= ClockCount[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[10] <= ClockCount[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[11] <= ClockCount[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[12] <= ClockCount[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[13] <= ClockCount[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[14] <= ClockCount[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[15] <= ClockCount[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[16] <= ClockCount[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[17] <= ClockCount[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[18] <= ClockCount[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[19] <= ClockCount[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[20] <= ClockCount[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[21] <= ClockCount[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[22] <= ClockCount[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[23] <= ClockCount[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[24] <= ClockCount[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ClockCount[25] <= ClockCount[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part4|Hex7seg:H3
+I[0] => Decoder0.IN3
+I[1] => Decoder0.IN2
+I[2] => Decoder0.IN1
+I[3] => Decoder0.IN0
+Hex[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+
+

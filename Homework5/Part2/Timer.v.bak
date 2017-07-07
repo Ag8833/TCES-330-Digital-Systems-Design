@@ -1,0 +1,24 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Lab 5, Part 1
+//
+// TO DO
+
+module Timer(Clk, Reset, Enable);
+   input Clk, Reset;
+   output reg Enable;
+   reg [23:0] ClockCount = 24'b0;
+   
+   // Always statement to either increment Q or reset Q to 0
+   always @(posedge Clk) begin
+      if(ClockCount == 24'b0)begin
+      Enable <= 1'b0;
+      end
+      ClockCount = ClockCount + 24'b1;       // Increment ClockCount
+      if(ClockCount == 24'd12_500_000)begin // ClockCount = 50,000,000 will increment Q every 1 second.
+         Enable <= 1'b1;
+         ClockCount <= 24'b0;                // Reset ClockCount to 0
+      end
+   end
+
+endmodule

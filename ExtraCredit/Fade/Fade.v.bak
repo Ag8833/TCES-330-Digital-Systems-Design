@@ -1,0 +1,20 @@
+// TCES 330, Spring 2016
+// Andrew Gates
+// Extra Credit
+//
+// TO DO
+
+module Fade(SW, LEDR, LEDG, CLOCK_50); 
+   input CLOCK_50;                  // System clock
+	input [7:0] SW;                  // Toggle switches 
+	output [17:0] LEDR;              // Red LEDs 
+   output [8:0] LEDG;               // Green LEDs
+   wire [7:0] Q;                    // Wire to be used for counting
+   wire Y;                          // Wire to be used for LED brightness
+   
+   PWM PWM0(CLOCK_50, SW, Y, Q);    // Modeule call to get the values for Y
+   
+   assign LEDR = {18{Y}};           // Red LED
+   assign LEDG = {9{~Y}};           // Green LED
+   
+endmodule   

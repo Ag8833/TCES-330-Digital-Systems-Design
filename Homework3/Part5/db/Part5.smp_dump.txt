@@ -1,0 +1,13 @@
+
+State Machine - |Part5|FSMHexHELLODisplay:FSM0|State
+Name State~6 State~5 State~4 State~3 
+State.ALLBLANK 0 0 0 0 
+State.H 0 0 0 1 
+State.E 0 0 1 0 
+State.L2 0 0 1 1 
+State.L1 0 1 0 0 
+State.O 0 1 0 1 
+State.B3 0 1 1 0 
+State.B2 0 1 1 1 
+State.B1 1 0 0 0 
+State.ROTATE 1 0 0 1 

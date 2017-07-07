@@ -1,0 +1,13 @@
+
+State Machine - |Part4|FSMUpOrDownCounter:FSM0|State
+Name State~5 State~4 State~3 State~2 
+State.INT0 0 0 0 0 
+State.INT1 0 0 0 1 
+State.INT2 0 0 1 0 
+State.INT3 0 0 1 1 
+State.INT4 0 1 0 0 
+State.INT5 0 1 0 1 
+State.INT6 0 1 1 0 
+State.INT7 0 1 1 1 
+State.INT8 1 0 0 0 
+State.INT9 1 0 0 1 
